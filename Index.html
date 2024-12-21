@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mijn Portfolio</title>
+    <link rel="stylesheet" href="Portfolio.css">
+</head>
+<body>
+    <header class="hero">
+        <nav class="navbar">
+            <div class="logo">Mijn Portfolio</div>
+            <ul class="nav-links">
+                <li><a href="#about">Over Mij</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hero-content">
+            <h1>Welkom op mijn Portfolio</h1>
+            <p>Bouwkundig ontwerper met een passie voor architectuur en innovatie.</p>
+            <a href="#portfolio" class="btn">Bekijk mijn Werk</a>
+        </div>
+    </header>
+
+    <section id="about" class="about">
+        <h2>Over Mij</h2>
+        <p>
+            Ik ben een bouwkundig student gespecialiseerd in architectuur, met ervaring in
+            AutoCAD, Revit, en Rhino. Mijn passie ligt in duurzaam ontwerp en innovatie.
+        </p>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+        <h2>Portfolio</h2>
+        <div class="project">
+            <img src="project1.jpg" alt="Project 1">
+            <h3>Project 1</h3>
+            <p>Korte beschrijving van project 1.</p>
+        </div>
+        <div class="project">
+            <img src="project2.jpg" alt="Project 2">
+            <h3>Project 2</h3>
+            <p>Korte beschrijving van project 2.</p>
+        </div>
+        <div class="project">
+            <img src="project3.jpg" alt="Project 3">
+            <h3>Project 3</h3>
+            <p>Korte beschrijving van project 3.</p>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact</h2>
+       <form id="contact-form" method="POST" action="https://formspree.io/f/xpwwargp">
+            <label for="name">Naam</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Bericht</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit" class="btn">Verzenden</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2024 Mijn Portfolio. Alle rechten voorbehouden.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
