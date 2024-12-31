@@ -37,10 +37,23 @@ p {
 
 /* Hero sectie */
 .hero {
+    position: relative; /* Zet de positie van het element in om een pseudo-element te gebruiken */
     text-align: center;
     padding: 5em 2em;
-    background: url('hero-image.jpg') no-repeat center center/cover;
-    color: white;
+    color: #2b4c70;
+}
+
+.hero::before {
+    content: ''; /* Voeg een leeg pseudo-element toe */
+    position: absolute; /* Zorg ervoor dat het element op de achtergrond ligt */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('https://bouw-ontwerpen.nl/psoaptet/2023/05/b1.jpg') 
+        no-repeat center center/cover; /* Achtergrondafbeelding */
+    opacity: 0.5; /* Pas de doorzichtigheid van de afbeelding aan (0 is volledig transparant, 1 is volledig ondoorzichtig) */
+    z-index: -1; /* Zorg ervoor dat het pseudo-element achter de inhoud ligt */
 }
 
 .hero-content {
@@ -58,12 +71,56 @@ p {
 }
 
 /* Over mij sectie */
+/* Basisstijl voor de about-sectie */
 .about {
+    display: flex;
     padding: 2em;
     background-color: #f4f4f4;
     text-align: center;
+    
+    
 }
 
+.about-content {
+    display: flex; /* Plaats de afbeelding en tekst naast elkaar */
+    align-items: center; /* Zorg ervoor dat de tekst en afbeelding verticaal zijn uitgelijnd */
+    margin: 0 auto; 
+    gap: 2em; /* Ruimte tussen de afbeelding en tekst */
+}
+
+.about-img {
+    width: 500px; /* Pas de breedte van de afbeelding aan naar wens */
+    height: auto;
+    border-radius: 8px; /* Optioneel: voeg afgeronde hoeken toe */
+
+}
+
+.about-text {
+    max-width: 600px; /* Beperk de breedte van de tekst */
+}
+
+.about h2 {
+    font-size: 2em;
+    color: #2b4c70;
+}
+
+.about p {
+    font-size: 1.1em;
+    color: #555;
+}
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column; /* Zet de afbeelding en tekst onder elkaar op kleinere schermen */
+        align-items: center; /* Centraal uitlijnen */
+    }
+
+    .about-img {
+        width: 100%; /* De afbeelding neemt de volledige breedte in op kleinere schermen */
+        max-width: 300px; /* Max breedte voor de afbeelding */
+    }
+}
+
+/* Portfolio */
 /* Portfolio */
 .portfolio {
     padding: 2em;
@@ -71,6 +128,19 @@ p {
     flex-wrap: wrap;
     gap: 1em;
     justify-content: center;
+    position: relative; /* Voeg position: relative toe om pseudo-elementen te positioneren */
+}
+
+.portfolio::before {
+    content: ''; /* Leeg pseudo-element */
+    position: absolute; /* Zorg dat het achter de inhoud wordt geplaatst */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url(https://images.pexels.com/photos/5618007/pexels-photo-5618007.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) no-repeat center center/cover;
+    opacity: 0.5; /* Zet de gewenste opacity voor de achtergrond */
+    z-index: -1; /* Zorg ervoor dat het pseudo-element achter de inhoud ligt */
 }
 
 .project {
@@ -79,6 +149,7 @@ p {
     overflow: hidden;
     max-width: 300px;
     text-align: center;
+    background-color: rgba(255, 255, 255, 0.9); /* Voeg een lichte achtergrondkleur toe om de zichtbaarheid te verbeteren */
 }
 
 .project img {
