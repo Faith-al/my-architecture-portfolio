@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mijn Portfolio</title>
     <link rel="stylesheet" href="Portfolio.css">
+    <script src="Portfolio.js"></script>
 </head>
 <body>
+    <div id="content">
     <header class="hero">
         <nav class="navbar">
             <div class="logo">Mijn Portfolio</div>
@@ -14,49 +16,53 @@
                 <li><a href="#about">Over Mij</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li><button onclick="translateToEnglish()">Translate to English</button></li>
+                <li><button onclick="translateToDutch()">Translate to Dutch</button></li>
             </ul>
         </nav>
+        
         <div class="hero-content">
-            <h1>Welkom op mijn Portfolio</h1>
-            <p>Bouwkundig ontwerper met een passie voor architectuur en innovatie.</p>
+            <h1 id=titel>Welkom op mijn Portfolio</h1>
+            <p id = inleiding>Bouwkundig ontwerper met een passie voor architectuur en innovatie.</p>
             <a href="#portfolio" class="btn">Bekijk mijn Werk</a>
         </div>
     </header>
 
     <section id="about" class="about">
-        <h2>Over Mij</h2>
-        <p>
-            Ik ben een bouwkundig student gespecialiseerd in architectuur, met ervaring in
-            AutoCAD, Revit, en Rhino. Mijn passie ligt in duurzaam ontwerp en innovatie.
-        </p>
-    </section>
+    <div class="about-content">
+        <img src="https://cdn11.bigcommerce.com/s-ji12049oz7/product_images/uploaded_images/ral-7015.jpg" alt="Over mij afbeelding" class="about-img">
+        <div class="about-text">
+            <h2>Over Mij</h2>
+            <p>
+                Ik ben een bouwkundig student gespecialiseerd in architectuur, met ervaring in
+                AutoCAD, Revit, en Twinmotion. Mijn passie ligt in duurzaam ontwerp en innovatie.
+            </p>
+        </div>
+    </div>
+</section>
 
     <section id="portfolio" class="portfolio">
         <h2>Portfolio</h2>
+        
         <div class="project">
-            <img src="project1.jpg" alt="Project 1">
-            <h3>Project 1</h3>
+            
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmvLayyn5F7Xu7-dsml1jNN0ZQTW2wycPMwg&s" alt="Project 1">
+            <a href="Project%201.html"><h3> Project 1</h3></a>
             <p>Korte beschrijving van project 1.</p>
         </div>
         <div class="project">
-            <img src="project2.jpg" alt="Project 2">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmvLayyn5F7Xu7-dsml1jNN0ZQTW2wycPMwg&s" alt="Project 2">
             <h3>Project 2</h3>
             <p>Korte beschrijving van project 2.</p>
         </div>
         <div class="project">
-            <img src="project3.jpg" alt="Project 3">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmvLayyn5F7Xu7-dsml1jNN0ZQTW2wycPMwg&s" alt="Project 3">
             <h3>Project 3</h3>
             <p>Korte beschrijving van project 3.</p>
         </div>
     </section>
-    
-<iframe
-  src="https://app.speckle.systems/projects/67ce670a85/models/2b6ec7f3e2#embed=%7B%22isEnabled%22%3Atrue%7D>"
-  width="600"
-  height="400"
-  frameborder="0">
-</iframe>
-    
+
+
     <section id="contact" class="contact">
         <h2>Contact</h2>
        <form id="contact-form" method="POST" action="https://formspree.io/f/xpwwargp">
@@ -70,9 +76,11 @@
         </form>
     </section>
 
+    
     <footer>
         <p>© 2024 Mijn Portfolio. Alle rechten voorbehouden.</p>
     </footer>
-
+    </div>
+    
 </body>
 </html>
