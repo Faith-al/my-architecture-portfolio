@@ -1,0 +1,106 @@
+/* Navigatie */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em;
+    background-color: #333;
+    color: white;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Twee kolommen van gelijke breedte */
+    gap: 20px; /* Ruimte tussen de items */
+    align-items: center; /* Verticaal centreren */
+    max-width: 1000px; /* Maximaal breedte van de container */
+    margin: 0 auto; /* Centreer de grid-container op de pagina */
+        break-inside: avoid; /* Zorg dat items niet worden afgebroken */
+    border-radius: 20px;
+    padding-bottom: 1em;
+    padding-top: 1em;
+}
+
+.grid-item {
+    border: 1px solid #ddd; /* Optioneel: rand om elk item */
+    border-radius: 20px;
+    overflow: hidden; /* Zorg ervoor dat de inhoud binnen de rand blijft */
+    background-color: #fff; /* Optioneel: witte achtergrond */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optioneel: schaduw */
+    
+}
+
+.speckle iframe {
+    width: 100%; /* Laat het iframe zich aanpassen aan de containerbreedte */
+    height: ; /* Zorg voor volledige hoogte binnen de container */
+    border: ; /* Verwijder rand van het iframe */
+}
+
+
+.uitleg img {
+    width:100%;
+   border: 1px solid #ddd; /* Optioneel: rand om elk item */
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optioneel: schaduw */
+}
+
+/* Responsief ontwerp */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr; /* Eén kolom op kleinere schermen */
+    }
+}
+
+
+.text-block {
+    background-color: #f0f0f0; /* Lichtgrijze achtergrond */
+    border: 1px solid #ddd; /* Dunne rand */
+    border-radius: 8px; /* Afgeronde hoeken */
+    padding: 20px; /* Ruimte binnenin het blok */
+    max-width: 1000px; /* Maximale breedte van het blok */
+    margin: 20px auto; /* Centreer het blok op de pagina */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtiele schaduw */
+    color: #333; /* Tekstkleur */
+    line-height: 1.6; /* Ruimte tussen regels */
+}
+
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1em;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.gallery {
+    column-count: 3; /* Aantal kolommen */
+    column-gap: 15px; /* Ruimte tussen kolommen */
+}
+
+.gallery-item {
+    margin-bottom: 15px; /* Ruimte onder items */
+    break-inside: avoid; /* Zorg dat items niet worden afgebroken */
+}
+
+.gallery-item img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
