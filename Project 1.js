@@ -122,10 +122,10 @@ function translateToEnglish() {
         document.getElementById('revit').innerText = "Revit";        
         document.getElementById('constr').innerText = "Roof construction detail";        
         document.getElementById('confun').innerText = "Foundation/wall construction detail";
-        document.getElementById('bouwkdak').innerText = "Architectural Roof Detail";        
-        document.getElementById('bouwkfun').innerText = "Architectural Foundation/wall Detail";   
+        document.getElementById('bouwkdak').innerText = "Architectural roof detail";        
+        document.getElementById('bouwkfun').innerText = "Architectural foundation/wall detail";   
         document.getElementById('instrnl').src = "Portfolio.photo/Instructions.png";
-    
+        document.getElementById('2punt ').innerText = "two-point perspectief";  
     }
 
     function translateToDutch() {
@@ -140,5 +140,5 @@ function translateToEnglish() {
         document.getElementById('bouwkdak').innerText = "Bouwkundige dak detail";        
         document.getElementById('bouwkfun').innerText = "Bouwkundige fundering/muur detail";        
         document.getElementById('instrnl').src= "Portfolio.photo/Instructies.png";
-        
+        document.getElementById('2punt ').innerText = "twee puntsperspectief";   
     }
