@@ -3,47 +3,195 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pinterest-Style Gallery</title>
+    <title>Levensloopbestendig wonen</title>
     <link rel="stylesheet" href="Project%201.css">
 </head>
 <body>
+    
+    <div id="content">
+    <header class="hero1">
         <nav class="navbar">
-            <div class="logo"><a href= "index.html">Mijn Portfolio</a></div>
+            <div class="logo">
+                <a href="index.html">
+                <img src="Portfolio.photo/Mijn%20Portfolio%20logo.png" ></a></div>
             <ul class="nav-links">
-                <li><a href="#about">Over Mij</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a id=overpr href="index.html#about">Over Mij</a></li>
+                <li><a href="index.html#portfolio">Portfolio</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <li><button id="engbutton" onclick="translateToEnglish()">English</button></li>
+                <li><button id="nlbutton" onclick="translateToDutch()">Nederlands</button></li>
             </ul>
         </nav>
+      
 
-    
-    
+   
     <div class="grid-container">
-    <div class="grid-item speckle"><nav class="speckle">    
-        <iframe title="Speckle" src="https://app.speckle.systems/projects/9f35e7b1ba/models/985c882d2a#embed=%7B%22isEnabled%22%3Atrue%7D"
-            width="700" height="500" frameborder="0"></iframe>  
-        </nav></div>
+        <div class="grid-item speckle">
+            <nav class="speckle">    
+                <iframe  id="speckleIframe" title="Speckle" 
+                    src="https://app.speckle.systems/projects/9f35e7b1ba/models/985c882d2a#embed=%7B%22isEnabled%22%3Atrue%7D"
+                    width="700" height="500" frameborder="0"></iframe> 
+                <button id="fullscreenButton">Vergroot</button>
+        </nav>
+</div>
     
     <div class="grid item uitleg">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmvLayyn5F7Xu7-dsml1jNN0ZQTW2wycPMwg&s" 
+            <img id=instrnl src="Portfolio.photo/Instructies.png" 
                  alt="Uitleg" width="350" height="400" >
     </div>  
     </div>   
+  </header>
+    </div>
+
     
    <div class="text-block">
-        <h2>Titel van het Blok</h2>
-        <p>Dit is een voorbeeld van een tekstblok. Je kunt hier zoveel tekst toevoegen als je wilt. Het blok past zich aan de inhoud aan en kan worden gestyled zoals jij wilt.</p>
+        <h2 id=titell>Levensloopbestendig wonen</h2>
+        <p id=inleidingl>Welkom bij mijn project over levensloopbestendig wonen! Dit ontwerp richt zich op het creëren van een woning 
+die geschikt is voor alle levensfasen, met een sterke focus op functionaliteit, comfort en duurzaamheid. 
+Het project is geïnspireerd door de groeiende vraag naar woningen die ouderen de mogelijkheid bieden om 
+zelfstandig te blijven wonen, zelfs als hun behoeften veranderen.
+Bekijk hieronder enkele afbeeldingen van mijn proces, schetsen, en technische uitwerkingen. Ik hoor graag wat je ervan vindt!</p>
     </div>
 
     
     <div class="gallery">
-        <div class="gallery-item"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJwAAAFECAMAAADlfKeJAAAAA1BMVEV2dnY3BSNBAAAASElEQVR4nO3BgQAAAADDoPlTX+EAVQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwGsa0AAES9VNAAAAAAElFTkSuQmCC" alt="Image 1"></div>
-        <div class="gallery-item"><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhUSEhIVFRUVFxUXFRcVFRUVFRUVFRUXFxUVFRUYHSggGBolHRUXITEhJSkrLi4uFx8zODMtNygtLisBCgoKDQ0NDg0NDysZFRkrNy0rKys3LS03Ny0rLTctLTctLSsrLSsrNy0tKysrKysrKysrKysrKysrKysrKysrK//AABEIAJ0BQQMBIgACEQEDEQH/xAAYAAEBAQEBAAAAAAAAAAAAAAABAAIDBP/EACEQAQEBAQABBAIDAAAAAAAAAAABEQISAyExYbHwE0GB/8QAFgEBAQEAAAAAAAAAAAAAAAAAAAEC/8QAFREBAQAAAAAAAAAAAAAAAAAAABH/2gAMAwEAAhEDEQA/APJ/TN+jYy0CHUNA6zWhQAFqqC0WqwAotUIDEayCtZtarNQUSFEWqrDIopTqsZQb0azjWKpHiYbEGZDiMqgsTWq0QAmAIUQBRxQRqVSIC1GY1AKKBrrliunqVmiucNhqoM1k1RBi0mwYAGm0AeV0orQAVo0FQQgKMaxCA6hVFq1LAWkYLAa90y1KBB8lKCRxSAFpwaBhWoDDohihKlQGRrBGpAQbz7QLvpi1erKJBTiMqvKDGMtbooCwEdQBqCAyjRq1AVFhQyqQYcQVSQJHEqMnQgI0oAsVPIGCdNQYChGLAahrOEENUiwGjGGoDWtRmNRRoxluAcDfigPdcsde2MRXLxyu3XwKAc/UUi6i+FBooitQZtVVUEXIrpzBSK52GmgRYqUDOA9AChK1oM3lY0kBRDUDNMViAyHB8LVEotWAYqzpBRoRATKyVG9alYlb5BprliOnIOmpZ9kGLBWur7jBWbBWrGegZYtb6cqgNVSkAWBoCNazqwAtWqjBTrPkRRFVIsWAJC1IkGcahQCiQ1RQFJARYsOKCjmms4B1RSKgTKotFJGNQFG+WcaVG5jccuW5QdP8TOIGuozzMb6ikFZ7rlXX1Y5gzjFjbNBmgmoDEvIWqilViixBlU1nRUrDBRFKrQEHSVpyjfNA4sIUZsVasSDMWrDijMhpGAEaAUUhMoIHQBMqQGVqM4Yo6ctRmVoGvJDEDr17M636jn0KOmMOigzWbDVAZTWM1AWIhUDQUQZsZx6Lw5d84DLLVjIIU6rQR5A5oOka1iUygRRehAI1USgiEBq0YsBrTjEa0CFCBUWpQtQa3AUdOa5Ncg6lhA62sdU2M9isirVQYUF5alBi9i1064lY/jAVQ4BFjUrHkog66OqyzQHTJtEAWBqwAhjbNAxrGCCsTWrxBmstM6DQB8gVpnTNqgN6uYpGpFGauUAa1qMytQGsQhAxuMRuA0h5fSB1vUrj18tyM9Cis6305wFUqzoNC0ADWVYAVUphQTPRrFggtUpZsA6WcGg6SM0ygBToqgGw6IOoCvQlHisBrUNVoHGuWJVaDfVHPQa4BVSNWLxUR1lA1rUrnG4DcajEagN6D4/v7ADfqUY32zIKz0xY6a5dX8gzUKgNMZt91qCoo1epBDOhaxzWoA8lGunPANrFVILTGZWgS1mxrBRVKqII1aMZVoNagNBpCNANNHSAytSuekHTRojW+2qLVatZAukrk1AdTyOK1gNaAQf/2Q==" alt="Image 2"></div>
-        <div class="gallery-item"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAA1BMVEWsqKW3evhYAAAASElEQVR4nO3BgQAAAADDoPlTX+AIVQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwDcaiAAFXD1ujAAAAAElFTkSuQmCC" alt="Image 3"></div>
-        <div class="gallery-item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmvLayyn5F7Xu7-dsml1jNN0ZQTW2wycPMwg&s" alt="Image 4"></div>
-        <div class="gallery-item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmvLayyn5F7Xu7-dsml1jNN0ZQTW2wycPMwg&s" alt="Image 5"></div>
-        <!-- Voeg meer items toe -->
+       
+     <!--Plaatje 1--> 
+    <div class="gallery-item">
+	   <a class="button" href="#popup1"> 
+        <img src="Portfolio.photo/0024.jpg">
+       </a>  
     </div>
+    <div id="popup1" class="overlay">
+        <div class="popup"> 
+            <h2 id=plat >Plattegrond</h2> 
+            <a class="close" href="#">&times;</a>
+            <div class="content">
+                <img src="Portfolio.photo/0024.jpg" alt="Image 1"/>
+               
+            </div>
+                         <!-- Navigatiepijlen -->
+                <a class="prev" href="#popup7">&#10094;</a>
+                <a class="next" href="#popup2">&#10095;</a>
+        </div>
+    </div>    
+        
+
+<!--Plaatje 2--> 
+    <div class="gallery-item">
+	   <a class="button" href="#popup2"> 
+        <img src="Portfolio.photo/0025.jpg">
+       </a>  
+    </div>
+    <div id="popup2" class="overlay">
+        <div class="popup"> 
+            <h2 id= 2punt >2 puntsperspectief</h2> 
+            <a class="close" href="#">&times;</a>
+            <div class="content">
+                <img src="Portfolio.photo/0025.jpg"  alt="Image 2"/>
+            </div>
+             <!-- Navigatiepijlen -->
+                <a class="prev" href="#popup1" >&#10094;</a>
+                <a class="next" href="#popup3" >&#10095;</a>
+        </div>
+    </div>    
+
+<!--Plaatje 3--> 
+    <div class="gallery-item">
+	   <a class="button" href="#popup3"> 
+        <img src="Portfolio.photo/0052.jpg">
+       </a>  
+    </div>
+    <div id="popup3" class="overlay">
+        <div class="popup"> 
+            <h2 id= revit>Revit</h2> 
+            <a class="close" href="#">&times;</a>
+            <div class="content">
+                <img src="Portfolio.photo/0052.jpg"  alt="Image 3"/>
+            </div>
+             <!-- Navigatiepijlen -->
+                <a class="prev" href="#popup2" >&#10094;</a>
+                <a class="next" href="#popup4" >&#10095;</a>
+        </div>
+    </div>    
+
+        <!--Plaatje 4--> 
+    <div class="gallery-item">
+	   <a class="button" href="#popup4"> 
+        <img src="Portfolio.photo/0033.jpg">
+       </a>  
+    </div>
+    <div id="popup4" class="overlay">
+        <div class="popup"> 
+            <h2 id=constr >Constructie dak detail</h2> 
+            <a class="close" href="#">&times;</a>
+            <div class="content">
+                <img src="Portfolio.photo/0033.jpg"  alt="Image 4"/>
+            </div>
+             <!-- Navigatiepijlen -->
+                <a class="prev" href="#popup3" >&#10094;</a>
+                <a class="next" href="#popup5" >&#10095;</a>
+        </div>
+    </div>    
+        
+        <!--Plaatje 5--> 
+    <div class="gallery-item">
+	   <a class="button" href="#popup5"> 
+        <img src="Portfolio.photo/0034.jpg">
+       </a>  
+    </div>
+    <div id="popup5" class="overlay">
+        <div class="popup"> 
+            <h2 id=confun >Constructie fundering/muur detail</h2> 
+            <a class="close" href="#">&times;</a>
+            <div class="content">
+                <img src="Portfolio.photo/0034.jpg"  alt="Image 5"/>
+            </div>
+             <!-- Navigatiepijlen -->
+                <a class="prev" href="#popup4" >&#10094;</a>
+                <a class="next" href="#popup6" >&#10095;</a>
+        </div>
+    </div>    
+        
+        <!--Plaatje 6--> 
+    <div class="gallery-item">
+	   <a class="button" href="#popup6"> 
+        <img src="Portfolio.photo/0046.jpg">
+       </a>  
+    </div>
+    <div id="popup6" class="overlay">
+        <div class="popup"> 
+            <h2 id= bouwkdak >Bouwkundige dak detail</h2> 
+            <a class="close" href="#">&times;</a>
+            <div class="content">
+                <img src="Portfolio.photo/0046.jpg"  alt="Image 6"/>
+            </div>
+             <!-- Navigatiepijlen -->
+                <a class="prev" href="#popup5" >&#10094;</a>
+                <a class="next" href="#popup7" >&#10095;</a>
+        </div>
+    </div>    
+        
+        <!--Plaatje 7--> 
+    <div class="gallery-item">
+	   <a class="button" href="#popup7"> 
+        <img src="Portfolio.photo/0047.jpg">
+       </a>  
+    </div>
+    <div id="popup7" class="overlay">
+        <div class="popup"> 
+            <h2 id=bouwkfun >Bouwkundige fundering/muur detail</h2> 
+            <a class="close" href="#">&times;</a>
+            <div class="content">
+                <img src="Portfolio.photo/0047.jpg"  alt="Image 2"/>
+            </div>
+             <!-- Navigatiepijlen -->
+                <a class="prev" href="#popup6" >&#10094;</a>
+                <a class="next" href="#popup1" >&#10095;</a>
+        </div>
+    </div>    
+    
+        </div>
 
     <script src="Project%201.js"></script>
 </body>
