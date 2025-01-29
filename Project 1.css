@@ -8,6 +8,34 @@
     color: white;
 }
 
+.logo {
+    display: flex;
+    align-items: center; /* Centreert het logo verticaal */
+    justify-content: center; /* Optioneel: centreert het logo horizontaal */
+    height: 60px; /* Zorgt ervoor dat het logo niet te groot wordt */
+}
+
+.logo img {
+    max-height: 50px; /* Beperk de hoogte */
+    width: auto; /* Zorgt ervoor dat de breedte zich automatisch aanpast */
+}
+
+#engbutton, #nlbutton {
+    align-content: center;
+    background-color: #007bff; /* Blauwe achtergrond */
+    color: white; /* Witte tekst */
+    border: none; /* Geen rand */
+    border-radius: 5px; /* Afgeronde hoeken */
+    cursor: pointer; /* Maakt het duidelijk dat het klikbaar is */
+    transition: background-color 0.3s ease; /* Soepel hover effect */
+    padding: 7px 16px; /* Kleinere knoppen */
+    font-size: 14px;
+}
+
+/* Hover-effect */
+#engbutton:hover, #nlbutton:hover {
+    background-color: #0056b3; /* Donkerder blauw bij hover */
+}
 
 .grid-container {
     display: grid;
@@ -18,7 +46,7 @@
     margin: 0 auto; /* Centreer de grid-container op de pagina */
         break-inside: avoid; /* Zorg dat items niet worden afgebroken */
     border-radius: 20px;
-    padding-bottom: 1em;
+    padding-bottom: 0.1em;
     padding-top: 1em;
 }
 
@@ -52,9 +80,23 @@
     }
 }
 
+button#fullscreenButton {
+    margin-top: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button#fullscreenButton:hover {
+    background-color: #0056b3;
+}
 
 .text-block {
-    background-color: #f0f0f0; /* Lichtgrijze achtergrond */
+    background-color: #ffffff; /* Lichtgrijze achtergrond */
     border: 1px solid #ddd; /* Dunne rand */
     border-radius: 8px; /* Afgeronde hoeken */
     padding: 20px; /* Ruimte binnenin het blok */
@@ -64,6 +106,7 @@
     color: #333; /* Tekstkleur */
     line-height: 1.6; /* Ruimte tussen regels */
 }
+
 
 
 .nav-links {
@@ -84,14 +127,51 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    padding: 20px;
+  font-family: Arial, sans-serif;
+  position: relative;
+  background-color: #f2fbff;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+ /* Blauw met transparantie */
+  z-index: -1; /* Zorg ervoor dat de overlay achter de inhoud komt */
+}
+
+.hero1 {
+    position: relative; /* Zet de positie van het element in om een pseudo-element te gebruiken */
+   
+    padding: 4em 2em;
+    color: #2b4c70;
+}
+
+.hero1::before {
+    content: ''; /* Voeg een leeg pseudo-element toe */
+    position: absolute; /* Zorg ervoor dat het element op de achtergrond ligt */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('https://images.pexels.com/photos/5618007/pexels-photo-5618007.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') 
+    no-repeat center center/cover; /* Achtergrondafbeelding */
+     /* Pas de doorzichtigheid van de afbeelding aan (0 is volledig transparant, 1 is volledig ondoorzichtig) */
+    z-index: -1; /* Zorg ervoor dat het pseudo-element achter de inhoud ligt */
+}
+
+.hero1-content {
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .gallery {
     column-count: 3; /* Aantal kolommen */
     column-gap: 15px; /* Ruimte tussen kolommen */
+    padding: 0.5em 1em;
 }
 
 .gallery-item {
@@ -104,3 +184,135 @@ body {
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
+/* button*/
+
+
+
+.button {
+display: block; /* Zorg dat de link de volledige afbeelding bedekt */
+    width: 100%;    /* Laat het de volledige breedte innemen */
+    height: 100%;   /* Laat het de volledige hoogte innemen */
+    text-decoration: none; /* Verwijder eventuele onderlijning van de link */
+  transition: all 0.3s ease-out;
+}
+.button:hover {
+  background:  rgba(0, 0, 0, 0.1);
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    width: 70%;
+    height: 100%;
+    max-width: 1000px; /* Zorg dat de pop-up niet te breed is */
+    max-height: 200vh;
+    position: fixed; /* Gebruik fixed voor centreren */
+    top: 50%; /* Positioneer in het midden van de viewport */
+    left: 50%;
+    transform: translate(-50%, -50%); /* Houd rekening met breedte en hoogte */
+    overflow: auto; /* Zorg voor scrollen bij veel inhoud */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Voeg een lichte schaduw toe */
+    z-index: 1000; /* Zorg dat het boven andere elementen blijft */
+}
+
+.popup .content {
+    display: flex;
+    flex-direction: column; /* Zet tekst onder de afbeelding */
+    align-items: center; /* Centreer inhoud horizontaal */
+    gap: 15px; /* Voeg ruimte toe tussen afbeelding en tekst */
+    font-family: Arial, sans-serif; /* Zorg voor een nette fontstijl */
+    text-align: center; /* Centreer tekst */
+}
+
+.popup .content img {
+    max-width: 100%; /* Vul de beschikbare ruimte */
+    max-height: 90vh; /* Hoogte is maximaal 80% van de schermhoogte */
+    height: auto;
+    width: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+    text-align: center;
+    padding: 0.5em
+}
+.popup .close {
+  position: fixed;
+  top: px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+background-color: aliceblue;
+}
+
+/* Positionering van de pijlen */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 16px;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    user-select: none;
+    z-index: 1000;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/* Hover-effect voor de pijlen */
+.prev:hover, .next:hover {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+#popup4 img{
+height: 900px;
+}
+
+
+@media screen and (max-width: 5000px){
+  .box{
+    width: 70%;
+  }
+  .popup{
+    width: 100%;
+  }
+}
+
