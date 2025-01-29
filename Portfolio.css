@@ -14,6 +14,18 @@ p {
     margin: 0.5em 0;
 }
 
+.logo {
+    display: flex;
+    align-items: center; /* Centreert het logo verticaal */
+    justify-content: center; /* Optioneel: centreert het logo horizontaal */
+    height: 60px; /* Zorgt ervoor dat het logo niet te groot wordt */
+}
+
+.logo img {
+    max-height: 50px; /* Beperk de hoogte */
+    width: auto; /* Zorgt ervoor dat de breedte zich automatisch aanpast */
+}
+
 /* Navigatie */
 .navbar {
     display: flex;
@@ -89,7 +101,7 @@ p {
 }
 
 .about-img {
-    width: 500px; /* Pas de breedte van de afbeelding aan naar wens */
+    width: 300px; /* Pas de breedte van de afbeelding aan naar wens */
     height: auto;
     border-radius: 8px; /* Optioneel: voeg afgeronde hoeken toe */
 
