@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mijn Portfolio</title>
+    <title id= titelp>Mijn Portfolio</title>
     <link rel="stylesheet" href="Portfolio.css">
     <script src="Portfolio.js"></script>
 </head>
@@ -11,31 +11,34 @@
     <div id="content">
     <header class="hero">
         <nav class="navbar">
-            <div class="logo">Mijn Portfolio</div>
+            <div class="logo" >
+                <a href="index.html">
+                <img src="Portfolio.photo/Mijn%20Portfolio%20logo.png" ></a></div> 
             <ul class="nav-links">
-                <li><a href="#about">Over Mij</a></li>
+                <li><a id=overmp href="#about">Over Mij</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <li><button onclick="translateToEnglish()">Translate to English</button></li>
-                <li><button onclick="translateToDutch()">Translate to Dutch</button></li>
+                <li><button onclick="translateToEnglish()"> English</button></li>
+                <li><button onclick="translateToDutch()">Nederlands</button></li>
             </ul>
         </nav>
         
         <div class="hero-content">
             <h1 id=titel>Welkom op mijn Portfolio</h1>
-            <p id = inleiding>Bouwkundig ontwerper met een passie voor architectuur en innovatie.</p>
-            <a href="#portfolio" class="btn">Bekijk mijn Werk</a>
+            <p id = inleiding>Bouwkundig student met een passie voor architectuur en innovatie.</p>
+          
+            <a id=bekijkp href="#portfolio" class="btn">Bekijk mijn Werk</a>
         </div>
     </header>
 
     <section id="about" class="about">
     <div class="about-content">
-        <img src="https://cdn11.bigcommerce.com/s-ji12049oz7/product_images/uploaded_images/ral-7015.jpg" alt="Over mij afbeelding" class="about-img">
+        <img src="Portfolio.photo/Faithb.jpg" alt="Over mij afbeelding" class="about-img">
         <div class="about-text">
-            <h2>Over Mij</h2>
-            <p>
-                Ik ben een bouwkundig student gespecialiseerd in architectuur, met ervaring in
-                AutoCAD, Revit, en Twinmotion. Mijn passie ligt in duurzaam ontwerp en innovatie.
+            <h2 id=overh2 >Over Mij</h2>
+            <p id=overp>
+                Ik ben een bouwkundig student van hogeschool Rotterdam en zit nu in mijn tweede jaar. Ik ben gespecialiseerd in architectuur, met ervaring in
+                AutoCAD, Revit, en Twinmotion. Mijn passie ligt in een creatieve, innovatieve en duurzame ontwerpen te maken.
             </p>
         </div>
     </div>
@@ -45,20 +48,17 @@
         <h2>Portfolio</h2>
         
         <div class="project">
-            
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmvLayyn5F7Xu7-dsml1jNN0ZQTW2wycPMwg&s" alt="Project 1">
-            <a href="Project%201.html"><h3> Project 1</h3></a>
-            <p>Korte beschrijving van project 1.</p>
+            <img src="Portfolio.photo/Levensloopbestendig%20wonen.png" alt="Project 1">
+            <a href="Project%201.html"><h3 id=levenh3 > Levensloopbestendig wonen</h3></a>
         </div>
         <div class="project">
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmvLayyn5F7Xu7-dsml1jNN0ZQTW2wycPMwg&s" alt="Project 2">
             <h3>Project 2</h3>
-            <p>Korte beschrijving van project 2.</p>
+
         </div>
         <div class="project">
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmvLayyn5F7Xu7-dsml1jNN0ZQTW2wycPMwg&s" alt="Project 3">
             <h3>Project 3</h3>
-            <p>Korte beschrijving van project 3.</p>
         </div>
     </section>
 
@@ -66,13 +66,13 @@
     <section id="contact" class="contact">
         <h2>Contact</h2>
        <form id="contact-form" method="POST" action="https://formspree.io/f/xpwwargp">
-            <label for="name">Naam</label>
+            <label id=naam for="name">Naam</label>
             <input type="text" id="name" name="name" required>
             <label for="email">E-mail</label>
             <input type="email" id="email" name="email" required>
-            <label for="message">Bericht</label>
+            <label id= bericht for="message">Bericht</label>
             <textarea id="message" name="message" required></textarea>
-            <button type="submit" class="btn">Verzenden</button>
+            <button id=verzenden type="submit" class="btn">Verzenden</button>
         </form>
     </section>
 
