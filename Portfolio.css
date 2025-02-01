@@ -169,6 +169,11 @@ p {
     z-index: -1; /* Zorg ervoor dat het pseudo-element achter de inhoud ligt */
 }
 
+.portfolio h2{
+color: #2b4c70;
+}
+
+
 .project {
     border: 1px solid #ddd;
     border-radius: 5px;
@@ -194,6 +199,10 @@ p {
 .contact form {
     max-width: 500px;
     margin: 0 auto;
+}
+
+#message{
+    height: 200px;
 }
 
 .contact label, .contact input, .contact textarea {
