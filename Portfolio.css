@@ -96,6 +96,11 @@ p {
     text-decoration: none;
 }
 
+#bekijkp {
+    position: relative;
+    top: 20px; /* Verplaatst de knop 20px naar beneden */
+}
+
 /* Over mij sectie */
 /* Basisstijl voor de about-sectie */
 .about {
