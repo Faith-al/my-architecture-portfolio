@@ -55,10 +55,13 @@ closeButtons.forEach((button) => {
 });
 
 // Sluit de pop-up bij klikken buiten de inhoud
-popup.addEventListener('click', (e) => {
-    if (e.target === popup) {
-        close();
-    }
+document.querySelectorAll('.overlay').forEach((popup) => {
+    popup.addEventListener('click', (e) => {
+        if (e.target === popup) {
+            popup.style.visibility = 'hidden';
+            popup.style.opacity = '0';
+        }
+    });
 });
 
 // Array met afbeeldingen
@@ -119,13 +122,14 @@ function translateToEnglish() {
         document.getElementById('overpr').innerText = "About Me";        
         document.getElementById('fullscreenButton').innerText = "Full Screen";       
         document.getElementById('plat').innerText = "Floorplan";
+        document.getElementById('2punt').innerText = "Two-point perspective";   
         document.getElementById('revit').innerText = "Revit";        
         document.getElementById('constr').innerText = "Roof construction detail";        
         document.getElementById('confun').innerText = "Foundation/wall construction detail";
-        document.getElementById('bouwkdak').innerText = "Architectural roof detail";        
-        document.getElementById('bouwkfun').innerText = "Architectural foundation/wall detail";   
+        document.getElementById('bouwkdak').innerText = "Architectural Roof Detail";        
+        document.getElementById('bouwkfun').innerText = "Architectural Foundation/wall Detail";   
         document.getElementById('instrnl').src = "Portfolio.photo/Instructions.png";
-        document.getElementById('2punt ').innerText = "two-point perspectief";  
+    
     }
 
     function translateToDutch() {
@@ -134,11 +138,12 @@ function translateToEnglish() {
         document.getElementById('overpr').innerText = "Over Mij";        
         document.getElementById('fullscreenButton').innerText = "Vergroot";        
         document.getElementById('plat').innerText = "Plattegrond";
+        document.getElementById('2punt').innerText = "2 puntsperspectief";   
         document.getElementById('revit').innerText = "Revit";        
         document.getElementById('constr').innerText = "Constructie dak detail";        
         document.getElementById('confun').innerText = "Constructie dak detail";
         document.getElementById('bouwkdak').innerText = "Bouwkundige dak detail";        
         document.getElementById('bouwkfun').innerText = "Bouwkundige fundering/muur detail";        
-        document.getElementById('instrnl').src= "Portfolio.photo/Instructies.png";
-        document.getElementById('2punt ').innerText = "twee puntsperspectief";   
+        document.getElementById('instrnl').src= "Portfolio.photo/Instructies2.png";
+        
     }
