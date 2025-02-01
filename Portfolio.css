@@ -47,6 +47,20 @@ p {
     text-decoration: none;
 }
 
+.nav-links button {
+    background: none; /* Verwijder de standaardachtergrond */
+    border: none; /* Verwijder de standaardrand */
+    padding: 0; /* Verwijder extra padding */
+    cursor: pointer; /* Zorg dat het nog steeds als een knop werkt */
+    display: inline-block;
+}
+
+.nav-links button img {
+    height: 30px;
+    width: 50px;
+    display: block; /* Voorkomt extra witruimte */
+}
+
 /* Hero sectie */
 .hero {
     position: relative; /* Zet de positie van het element in om een pseudo-element te gebruiken */
