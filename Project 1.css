@@ -20,22 +20,21 @@
     width: auto; /* Zorgt ervoor dat de breedte zich automatisch aanpast */
 }
 
-#engbutton, #nlbutton {
-    align-content: center;
-    background-color: #007bff; /* Blauwe achtergrond */
-    color: white; /* Witte tekst */
-    border: none; /* Geen rand */
-    border-radius: 5px; /* Afgeronde hoeken */
-    cursor: pointer; /* Maakt het duidelijk dat het klikbaar is */
-    transition: background-color 0.3s ease; /* Soepel hover effect */
-    padding: 7px 16px; /* Kleinere knoppen */
-    font-size: 14px;
+.nav-links button {
+    background: none; /* Verwijder de standaardachtergrond */
+    border: none; /* Verwijder de standaardrand */
+    padding: 0; /* Verwijder extra padding */
+    cursor: pointer; /* Zorg dat het nog steeds als een knop werkt */
+    display: inline-block;
 }
 
-/* Hover-effect */
-#engbutton:hover, #nlbutton:hover {
-    background-color: #0056b3; /* Donkerder blauw bij hover */
+.nav-links button img {
+    height: 30px;
+    width: 50px;
+    display: block; /* Voorkomt extra witruimte */
 }
+
+
 
 .grid-container {
     display: grid;
@@ -145,8 +144,7 @@ body::before {
 
 .hero1 {
     position: relative; /* Zet de positie van het element in om een pseudo-element te gebruiken */
-   
-    padding: 4em 2em;
+    padding: 2em 2em;
     color: #2b4c70;
 }
 
@@ -171,7 +169,7 @@ body::before {
 .gallery {
     column-count: 3; /* Aantal kolommen */
     column-gap: 15px; /* Ruimte tussen kolommen */
-    padding: 0.5em 1em;
+    padding: 2em 2em;
 }
 
 .gallery-item {
