@@ -13,11 +13,20 @@
     align-items: center; /* Centreert het logo verticaal */
     justify-content: center; /* Optioneel: centreert het logo horizontaal */
     height: 60px; /* Zorgt ervoor dat het logo niet te groot wordt */
+   flex-direction: column; /* Stapelt de elementen onder elkaar */
 }
 
 .logo img {
     max-height: 50px; /* Beperk de hoogte */
     width: auto; /* Zorgt ervoor dat de breedte zich automatisch aanpast */
+    display: block; /* Voorkomt dat de afbeelding naast de tekst komt */
+    margin: 0 auto; /* Centreert de afbeelding */
+}
+
+.logo-text {
+    text-align: center; /* Zorgt ervoor dat de tekst gecentreerd is */
+    font-size: 16px; /* Pas de tekstgrootte aan indien nodig */
+    margin-top: 5px; /* Voegt ruimte toe tussen het logo en de tekst */
 }
 
 .nav-links button {
@@ -184,8 +193,6 @@ body::before {
 }
 
 /* button*/
-
-
 
 .button {
 display: block; /* Zorg dat de link de volledige afbeelding bedekt */
