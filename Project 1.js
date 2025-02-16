@@ -129,8 +129,12 @@ function translateToEnglish() {
         document.getElementById('bouwkdak').innerText = "Architectural Roof Detail";        
         document.getElementById('bouwkfun').innerText = "Architectural Foundation/wall Detail";   
         document.getElementById('instrnl').src = "Portfolio.photo/Instructions.png";
-    
-    }
+        document.getElementById('thuis').innerText = "Home";
+
+}
+
+
+
 
     function translateToDutch() {
         document.getElementById('titell').innerText = "Levensloopbestendig wonen";
@@ -145,5 +149,5 @@ function translateToEnglish() {
         document.getElementById('bouwkdak').innerText = "Bouwkundige dak detail";        
         document.getElementById('bouwkfun').innerText = "Bouwkundige fundering/muur detail";        
         document.getElementById('instrnl').src= "Portfolio.photo/Instructies2.png";
-        
+        document.getElementById('thuis').innerText = "Thuis";
     }
