@@ -6,7 +6,7 @@
     <title id= titelp>Mijn Portfolio</title>
     <link rel="stylesheet" href="Portfolio.css">
     <script src="Portfolio.js"></script>
- <!-- Voeg de juiste paden toe voor de favicon -->
+  <!-- Voeg de juiste paden toe voor de favicon -->
     <link rel="icon" href="Portfolio.photo/Mijn%20Portfolio%20logo.png" type="image/x-icon">
     <link rel="apple-touch-icon" href="Portfolio.photo/Mijn%20Portfolio%20logo.png" sizes="180x180">
     <link rel="icon" href="Portfolio.photo/Mijn%20Portfolio%20logo.png" sizes="32x32" type="image/png">
@@ -17,8 +17,10 @@
     <header class="hero">
         <nav class="navbar">
             <div class="logo" >
-                <a href="index.html">
-                <img src="Portfolio.photo/Mijn%20Portfolio%20logo.png" ></a></div> 
+                <a href="Portfolio.html">
+                <img src="Portfolio.photo/Mijn%20Portfolio%20logo.png"></a>
+                <div id="thuis" class="logo-text">Thuis</div>
+            </div> 
             <ul class="nav-links">
                 <li><a id=overmp href="#about">Over Mij</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
@@ -42,8 +44,12 @@
         <div class="about-text">
             <h2 id=overh2 >Over Mij</h2>
             <p id=overp>
-                Mijn naam is Faith Bundu en ik ben een bouwkundig student gespecialiseerd in architectuur, met ervaring in AutoCAD, Revit, en Twinmotion. Mijn passie ligt in het maken van creatieve, innovatieve en duurzame ontwerpen.
+                Mijn naam is Faith Bundu en ik ben een tweedejaars bouwkundestudent aan de Hogeschool Rotterdam. Ik ben gespecialiseerd in architectuur, met ervaring in AutoCAD, Revit, en Twinmotion. Mijn passie ligt in het maken van creatieve, innovatieve en duurzame ontwerpen.
             </p>
+            <a id="cvlogoLink" href="Portfolio.photo/CV-pages-1.pdf" target="_blank">
+            <img id="cvlogo" src="Portfolio.photo/CVlogo.png">
+            </a>
+            <a href="www.linkedin.com/in/faith-bundu-229988341" target="_blank"><img id="llogo" src="Portfolio.photo/linkedin.png"></a>
         </div>
     </div>
 </section>
@@ -53,16 +59,18 @@
         
         <div class="project">
             <img src="Portfolio.photo/Levensloopbestendig%20wonen.png" alt="Project 1">
+            <h3>Project 1</h3>
             <a href="Project%201.html"><h3 id=levenh3 > Levensloopbestendig wonen</h3></a>
         </div>
         <div class="project">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmvLayyn5F7Xu7-dsml1jNN0ZQTW2wycPMwg&s" alt="Project 2">
+            <img src="Portfolio.photo/duurzame%20gevel.png" alt="Project 2">
             <h3>Project 2</h3>
-
+            <a href="Project%202.html"><h3 id=circb > Circulaire bouwsteen</h3></a>
         </div>
         <div class="project">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmvLayyn5F7Xu7-dsml1jNN0ZQTW2wycPMwg&s" alt="Project 3">
+            <img src="Portfolio.photo/Pakhuislogo.png" alt="Project 3">
             <h3>Project 3</h3>
+            <a href="Project%203.html"><h3 id=pakhuis > Pakhuis woning</h3></a>
         </div>
     </section>
 
