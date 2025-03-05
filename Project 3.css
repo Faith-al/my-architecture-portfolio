@@ -6,6 +6,8 @@
     padding: 1em 2em;
     background-color: #333;
     color: white;
+    max-width: 1000px;  /* Pas dit aan aan de breedte van je foto + tekst */
+    margin: 0 auto;  /* Centreer de navbar */
 }
 
 .logo {
@@ -43,7 +45,25 @@
     display: block; /* Voorkomt extra witruimte */
 }
 
+.nav-links li {
+    /* Geen rand voor de li-elementen zelf, alleen voor de links */
+    margin: px; /* Optioneel: voeg wat ruimte toe rondom de knop */
+    padding: 2px px; /* Optioneel: voeg wat binnenruimte toe */
+}
 
+.nav-links li a {
+    border: 1px solid #878787; /* Voeg een zwarte rand toe van 2px */
+    background-color:none;
+    padding: 5px 10px; /* Voeg wat binnenruimte toe rondom de tekst */
+    border-radius: 5px; /* Optioneel: maak de hoeken afgerond */
+    text-decoration: none; /* Verwijder onderstreping van de link */
+    display: inline-block; /* Zorg ervoor dat de link zich gedraagt als een blok, zodat padding en borders werken */
+    color: inherit; /* Zorg ervoor dat de tekstkleur niet wordt overschreven */
+}
+
+.nav-links a:hover {
+    color: #5a5a5a; /* Rood-oranje bij hover */
+}
 
 .grid-container {
     display: grid;
@@ -52,9 +72,9 @@
     align-items: center; /* Verticaal centreren */
     max-width: 1000px; /* Maximaal breedte van de container */
     margin: 0 auto; /* Centreer de grid-container op de pagina */
-        break-inside: avoid; /* Zorg dat items niet worden afgebroken */
+    break-inside: avoid; /* Zorg dat items niet worden afgebroken */
     border-radius: 20px;
-    padding-bottom: 0.1em;
+    padding-bottom: 2em;
     padding-top: 1em;
 }
 
@@ -64,8 +84,9 @@
     overflow: hidden; /* Zorg ervoor dat de inhoud binnen de rand blijft */
     background-color: #fff; /* Optioneel: witte achtergrond */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optioneel: schaduw */
-    
+    width:700px;
 }
+
 
 .speckle iframe {
     width: 100%; /* Laat het iframe zich aanpassen aan de containerbreedte */
@@ -135,9 +156,22 @@ button#fullscreenButton:hover {
 }
 
 body {
-  font-family: Arial, sans-serif;
-  position: relative;
-  background-color: #f2fbff;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    position: relative;
+   background-color: #f4f4f4; 
+}
+
+h1, h2, h3 {
+font-family: 'Poppins', sans-serif;
+    margin: 0.5em 0;
+}
+
+p {
+font-family: 'Montserrat', sans-serif;
+    margin: 0.5em 0;
 }
 
 body::before {
@@ -155,6 +189,7 @@ body::before {
     position: relative; /* Zet de positie van het element in om een pseudo-element te gebruiken */
     padding: 2em 2em;
     color: #2b4c70;
+
 }
 
 .hero1::before {
@@ -164,32 +199,52 @@ body::before {
     left: 0;
     right: 0;
     bottom: 0;
-    background: url('https://images.pexels.com/photos/5618007/pexels-photo-5618007.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') 
-    no-repeat center center/cover; /* Achtergrondafbeelding */
+    background-color: #f4f4f4; /* Achtergrondafbeelding */
      /* Pas de doorzichtigheid van de afbeelding aan (0 is volledig transparant, 1 is volledig ondoorzichtig) */
     z-index: -1; /* Zorg ervoor dat het pseudo-element achter de inhoud ligt */
 }
 
 .hero1-content {
+
     max-width: 800px;
     margin: 0 auto;
 }
 
 .gallery {
-    column-count: 3; /* Aantal kolommen */
+    column-count: unset; /* Aantal kolommen */
     column-gap: 15px; /* Ruimte tussen kolommen */
-    padding: 2em 2em;
+   max-height: 79vh; /* Beperk de hoogte tot 80% van het scherm */
+    overflow: auto; /* Scrollbalk verschijnt als er te veel afbeeldingen zijn */
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .gallery-item {
-    margin-bottom: 15px; /* Ruimte onder items */
+    object-fit: contain;
+    margin-bottom: 5px; /* Ruimte onder items */
     break-inside: avoid; /* Zorg dat items niet worden afgebroken */
+    width: 280px; /* Zorgt ervoor dat de items de breedte benutten */
+   height: auto;
 }
 
 .gallery-item img {
-    width: 100%;
+    
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Optionele styling voor de scrollbar */
+.gallery::-webkit-scrollbar {
+    width: 8px;
+}
+
+.gallery::-webkit-scrollbar-thumb {
+    background: #888; /* Kleur van de scrollbar */
+    border-radius: 4px;
+}
+
+.gallery::-webkit-scrollbar-thumb:hover {
+    background: #555;
 }
 
 /* button*/
@@ -203,6 +258,27 @@ display: block; /* Zorg dat de link de volledige afbeelding bedekt */
 }
 .button:hover {
   background:  rgba(0, 0, 0, 0.1);
+}
+
+.questionbutton {
+background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.5em 0.5em;
+    font-size: 14.5px;
+    border-radius: 5px;
+    cursor: pointer;
+   position: right
+    
+}
+
+.questionbutton img{
+width: auto;
+height: 12px
+}
+
+.questionbutton:hover {
+    background-color: #0056b3;
 }
 
 .overlay {
@@ -307,10 +383,13 @@ background-color: aliceblue;
     background: rgba(0, 0, 0, 0.1);
 }
 
-#popup4 img{
-height: 900px;
-}
 
+/* Vergroot de video */
+#popup3 iframe {
+    width: 100%; /* Zorgt ervoor dat de video zich aanpast aan de breedte */
+    max-width: 900px; /* Maximale breedte */
+    height: 600px; /* Houdt de aspect-ratio */
+}
 
 @media screen and (max-width: 5000px){
   .box{
