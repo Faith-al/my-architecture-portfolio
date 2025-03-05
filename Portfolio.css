@@ -1,16 +1,18 @@
 /* Algemene opmaak */
 body {
-    font-family: Arial, sans-serif;
+    font-family: Poppins, sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
 }
 
 h1, h2, h3 {
+font-family: 'Poppins', sans-serif;
     margin: 0.5em 0;
 }
 
 p {
+font-family: 'Montserrat', sans-serif;
     margin: 0.5em 0;
 }
 
@@ -33,6 +35,7 @@ p {
     text-align: center; /* Zorgt ervoor dat de tekst gecentreerd is */
     font-size: 16px; /* Pas de tekstgrootte aan indien nodig */
     margin-top: 5px; /* Voegt ruimte toe tussen het logo en de tekst */
+
 }
 
 /* Navigatie */
@@ -43,7 +46,10 @@ p {
     padding: 1em 2em;
     background-color: #333;
     color: white;
+ max-width: 870px;  /* Pas dit aan aan de breedte van je foto + tekst */
+    margin: 0 auto;  /* Centreer de navbar */
 }
+
 
 .nav-links {
     list-style: none;
@@ -70,6 +76,26 @@ p {
     display: block; /* Voorkomt extra witruimte */
 }
 
+.nav-links li {
+    /* Geen rand voor de li-elementen zelf, alleen voor de links */
+    margin: px; /* Optioneel: voeg wat ruimte toe rondom de knop */
+    padding: 2px px; /* Optioneel: voeg wat binnenruimte toe */
+}
+
+.nav-links li a {
+    border: 1px solid #878787; /* Voeg een zwarte rand toe van 2px */
+    background-color:none;
+    padding: 5px 10px; /* Voeg wat binnenruimte toe rondom de tekst */
+    border-radius: 5px; /* Optioneel: maak de hoeken afgerond */
+    text-decoration: none; /* Verwijder onderstreping van de link */
+    display: inline-block; /* Zorg ervoor dat de link zich gedraagt als een blok, zodat padding en borders werken */
+    color: inherit; /* Zorg ervoor dat de tekstkleur niet wordt overschreven */
+}
+
+.nav-links a:hover {
+    color: #5a5a5a; /* Rood-oranje bij hover */
+}
+
 /* Hero sectie */
 .hero {
     position: relative; /* Zet de positie van het element in om een pseudo-element te gebruiken */
@@ -85,11 +111,18 @@ p {
     left: 0;
     right: 0;
     bottom: 0;
-    background: url('https://bouw-ontwerpen.nl/psoaptet/2023/05/b1.jpg') 
-        no-repeat center center/cover; /* Achtergrondafbeelding */
+    background: url("Portfolio.photo/Image2.png") no-repeat center;/* Achtergrondafbeelding */
+    filter: grayscale(50%);
     opacity: 0.5; /* Pas de doorzichtigheid van de afbeelding aan (0 is volledig transparant, 1 is volledig ondoorzichtig) */
     z-index: -1; /* Zorg ervoor dat het pseudo-element achter de inhoud ligt */
+    transition: filter 0.5s ease-in-out; /* Vloeiende overgang */
 }
+
+/* Terug naar kleur bij hover */
+.hero-content:hover::before {
+    filter: grayscale(0%);
+}
+
 
 .hero-content {
     max-width: 800px;
@@ -117,7 +150,7 @@ p {
     display: flex;
     padding: 2em;
     background-color: #f4f4f4;
-    text-align: center;
+    text-align: left;
     
     
 }
@@ -138,16 +171,19 @@ p {
 
 .about-text {
     max-width: 600px; /* Beperk de breedte van de tekst */
+ 
 }
 
 .about h2 {
     font-size: 2em;
-    color: #2b4c70;
+    color: #333;
+font-family: 'Poppins', sans-serif;
 }
 
 .about p {
     font-size: 1.1em;
     color: #555;
+font-family: 'Montserrat', sans-serif;
 }
 @media (max-width: 768px) {
     .about-content {
@@ -174,16 +210,23 @@ max-height: 50px; /* Beperk de hoogte */
 /* Portfolio */
 /* Portfolio */
 .portfolio {
-    padding: 2em;
+    padding-bottom: 2em;
     display: flex;
     flex-wrap: wrap;
     gap: 1em;
     justify-content: center;
     position: relative; /* Voeg position: relative toe om pseudo-elementen te positioneren */
+    text-align: center;
+flex-direction: column; /* Zorgt ervoor dat alles onder elkaar blijft */
+    align-items: center; /* Centreert de inhoud */
 }
 
 .portfolio h2{
-color: #2b4c70;
+color: #333;
+text-align: center;
+font-size: 2em; /* Maak de titel iets groter */
+    font-weight: bold;
+    margin-bottom: 20px; /* Voeg ruimte toe onder de titel */
 }
 
 .portfolio::before {
@@ -193,9 +236,16 @@ color: #2b4c70;
     left: 0;
     right: 0;
     bottom: 0;
-    background: url(https://images.pexels.com/photos/5618007/pexels-photo-5618007.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) no-repeat center center/cover;
-    opacity: 0.5; /* Zet de gewenste opacity voor de achtergrond */
+    background-color: #f4f4f4;
+    opacity: ; /* Zet de gewenste opacity voor de achtergrond */
     z-index: -1; /* Zorg ervoor dat het pseudo-element achter de inhoud ligt */
+}
+
+.portfolio-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Ruimte tussen de projecten */
+    flex-wrap: wrap; /* Zorgt ervoor dat het responsief blijft */
 }
 
 .project {
@@ -220,6 +270,23 @@ flex-grow: 1; /* Laat de afbeelding groeien en centreren */
 
 .project h3 {
     margin: 10px 0 0 0; /* Voorkom dat de tekst te dicht op de afbeelding staat */
+}
+
+/* Standaard linkkleur */
+a {
+    color: #333; /* Donkergrijs */
+    text-decoration: none; /* Verwijdert onderstreping */
+    transition: color 0.3s ease-in-out; /* Zorgt voor een vloeiende kleurovergang */
+}
+
+/* Hover-effect (wanneer je er met de muis overheen gaat) */
+a:hover {
+    text-decoration: underline; /* Optioneel: voegt een onderstreping toe bij hover */
+}
+
+/* Bezochte link (na het klikken) */
+a:visited {
+    color: #6c757d; /* Lichtgrijs */
 }
 
 /* Contactformulier */
