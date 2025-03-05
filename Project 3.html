@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600&family=Lato:wght@400;700&family=Open+Sans:wght@400;600&family=Poppins:wght@400;600&family=Raleway:wght@400;600&family=Rubik:wght@400;600&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pakhuis woning</title>
     <link rel="stylesheet" href="Project%203.css">
  <!-- Voeg de juiste paden toe voor de favicon -->
-    <link rel="icon" href="Portfolio.photo/Mijn%20Portfolio%20logo.png" type="image/x-icon">
-    <link rel="apple-touch-icon" href="Portfolio.photo/Mijn%20Portfolio%20logo.png" sizes="180x180">
-    <link rel="icon" href="Portfolio.photo/Mijn%20Portfolio%20logo.png" sizes="32x32" type="image/png">
-    <link rel="icon" href="Portfolio.photo/Mijn%20Portfolio%20logo.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="Portfolio.photo/Mijn%20Portfolio%20logo%203.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="Portfolio.photo/Mijn%20Portfolio%20logo%203.png" sizes="180x180">
+    <link rel="icon" href="Portfolio.photo/Mijn%20Portfolio%20logo%203.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="Portfolio.photo/Mijn%20Portfolio%20logo%203.png" sizes="16x16" type="image/png">
 </head>
 <body>
     
@@ -18,7 +19,7 @@
         <nav class="navbar">
             <div class="logo">
                 <a href="index.html">
-                <img src="Portfolio.photo/Mijn%20Portfolio%20logo.png" ></a>
+                <img src="Portfolio.photo/Mijn%20Portfolio%20logo%203.png" ></a>
                  <div id="thuis" class="logo-text">Thuis</div>
             </div>
             <ul class="nav-links">
@@ -29,6 +30,7 @@
                 <li><button onclick="translateToDutch()"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARMAAAC3CAMAAAAGjUrGAAAAFVBMVEWuHCghRov+//yoAAD69PL09vYAMILvTLDbAAAA90lEQVR4nO3QqQHAAAwAofTdf+T6nKqHEZgBAAAAAAAAAAAAAAAAAAAA+Olim5ttTjYn5aSclJNyUk7KSTkpJ+WknJSTclJOykk5KSflpJyUk3JSTspJOSkn5aSclJNyUk7KSTkpJ+WknJSTclJOykk5KSflpJyUk3JSTspJOSkn5aSclJNyUk7KSTkpJ+Wk5mGbl20ONiflpJyUk3JSTspJOSkn5aSclJNyUk7KSTkpJ+WknJSTclJOykk5KSflpJyUk3JSTspJOSkn5aSclJNyUk7KSTkpJ+WknJSTclJOykk5KSflpJyUk3JSTspJOSkn5aSc1AejotKN4FcXqgAAAABJRU5ErkJggg"> </button></li>
             </ul>
         </nav>
+        </header>
       
  <div class="text-block">
         <h2 id=titell>Pakhuis woning</h2>
@@ -54,18 +56,20 @@ Hieronder zijn de posters van mijn project waar je mijn proces, schetsen en uitw
                     src="https://app.speckle.systems/projects/4e780bacd5/models/443c62f39d#embed=%7B%22isEnabled%22%3Atrue%7D"
                     width="700" height="500" frameborder="0"></iframe> 
                 <button id="fullscreenButton">Vergroot</button>
+                    <a class="questionbutton" href="#questionButton"><img src= "Portfolio.photo/questionmark.png"></a>
+                    <div id="questionButton" class="overlay">
+                    <div class="popup"> 
+            <a class="close" href="#">&times;</a>
+            <div class="content">
+                 <img id=instrnl src="Portfolio.photo/Instructies2.png" 
+                 alt="Uitleg" width="350" height="400" >
+            </div>
+            </div>
+                </div>
         </nav>
 </div>
     
     <div class="grid item uitleg">
-            <img id=instrnl src="Portfolio.photo/Instructies2.png" 
-                 alt="Uitleg" width="350" height="400" >
-    </div>  
-    </div>   
-  </header>
-    </div>
-
-    
     <div class="gallery">
        
      <!--Plaatje 1--> 
@@ -82,7 +86,7 @@ Hieronder zijn de posters van mijn project waar je mijn proces, schetsen en uitw
                
             </div>
                          <!-- Navigatiepijlen -->
-                <a class="prev" href="#popup2">&#10094;</a>
+                <a class="prev" href="#popup7">&#10094;</a>
                 <a class="next" href="#popup2">&#10095;</a>
         </div>
     </div>    
@@ -102,14 +106,111 @@ Hieronder zijn de posters van mijn project waar je mijn proces, schetsen en uitw
             </div>
              <!-- Navigatiepijlen -->
                 <a class="prev" href="#popup1" >&#10094;</a>
-                <a class="next" href="#popup1" >&#10095;</a>
+                <a class="next" href="#popup3" >&#10095;</a>
+        </div>
+    </div>    
+        
+        <!--Plaatje 3--> 
+    <div class="gallery-item">
+	   <a class="button" href="#popup3"> 
+         <div class="content">
+            <img id="video-image" src="Portfolio.photo/video-png.png" alt="Video"/>
+        </div>
+       </a>  
+    </div>
+    <div id="popup3" class="overlay">
+        <div class="popup"> 
+            <a class="close" href="#">&times;</a>
+            <div class="content">
+            <iframe src="https://www.youtube.com/embed/b72LFBGKS6w" title="Twinmotion video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+             <!-- Navigatiepijlen -->
+                <a class="prev" href="#popup2" >&#10094;</a>
+                <a class="next" href="#popup4" >&#10095;</a>
         </div>
     </div>    
 
+<!--Plaatje 4--> 
+    <div class="gallery-item">
+	   <a class="button" href="#popup4"> 
+        <img id="poster4" src="Portfolio.photo/Image1.png">
+       </a>  
+    </div>
+    <div id="popup4" class="overlay">
+        <div class="popup"> 
+            <a class="close" href="#">&times;</a>
+            <div class="content">
+                <img id="poster4." src="Portfolio.photo/Image1.png"  alt="Image 2"/>
+            </div>
+             <!-- Navigatiepijlen -->
+                <a class="prev" href="#popup3" >&#10094;</a>
+                <a class="next" href="#popup5" >&#10095;</a>
+        </div>
+    </div>    
+    
 
+    <!--Plaatje 5--> 
+    <div class="gallery-item">
+	   <a class="button" href="#popup5"> 
+        <img id="poster5" src="Portfolio.photo/Image2.png">
+       </a>  
+    </div>
+    <div id="popup5" class="overlay">
+        <div class="popup"> 
+            <a class="close" href="#">&times;</a>
+            <div class="content">
+                <img id="poster5." src="Portfolio.photo/Image2.png"  alt="Image 2"/>
+            </div>
+             <!-- Navigatiepijlen -->
+                <a class="prev" href="#popup4" >&#10094;</a>
+                <a class="next" href="#popup6" >&#10095;</a>
+        </div>
+    </div>    
+    
+
+<!--Plaatje 6--> 
+    <div class="gallery-item">
+	   <a class="button" href="#popup6"> 
+        <img id="poster6" src="Portfolio.photo/Image3.png">
+       </a>  
+    </div>
+    <div id="popup6" class="overlay">
+        <div class="popup"> 
+            <a class="close" href="#">&times;</a>
+            <div class="content">
+                <img id="poster6." src="Portfolio.photo/Image3.png"  alt="Image 2"/>
+            </div>
+             <!-- Navigatiepijlen -->
+                <a class="prev" href="#popup5" >&#10094;</a>
+                <a class="next" href="#popup7" >&#10095;</a>
+        </div>
+    </div>    
+        
+        <!--Plaatje 7--> 
+    <div class="gallery-item">
+	   <a class="button" href="#popup7"> 
+        <img id="poster7" src="Portfolio.photo/Image4.png">
+       </a>  
+    </div>
+    <div id="popup7" class="overlay">
+        <div class="popup"> 
+            <a class="close" href="#">&times;</a>
+            <div class="content">
+                <img id="poster7." src="Portfolio.photo/Image4.png"  alt="Image 2"/>
+            </div>
+             <!-- Navigatiepijlen -->
+                <a class="prev" href="#popup6" >&#10094;</a>
+                <a class="next" href="#popup1" >&#10095;</a>
+        </div>
+        </div>
         </div>
 
+     
+
     <script src="Project%203.js"></script>
+</div>
+    </div>
+    </div>
 </body>
 </html>
 
