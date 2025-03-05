@@ -118,7 +118,7 @@ document.querySelectorAll('.popup').forEach((popup, index, popups) => {
    // Vertaalde tekst
 function translateToEnglish() {
         document.getElementById('titell').innerText = "Lifetime-Adaptable Living";
-        document.getElementById('inleidingl').innerText = "Welcome to my project on lifetime-adaptable living! This design focuses on creating a home that is suitable for all stages of life, with a strong emphasis on functionality, comfort, and sustainability.The project is inspired by the growing demand for homes that enable older adults to live independently, even as their needs change. Below, you can view some images of my process, sketches, and technical designs. I’d love to hear your thoughts!";
+        document.getElementById('inleidingl').innerText = "Welcome to my project on lifetime-adaptable living! This design focuses on creating a home that is suitable for all stages of life, with a strong emphasis on functionality, comfort, and sustainability.The project is inspired by the growing demand for homes that enable older adults to live independently, even as their needs change. Below, you can view some images of my process, sketches, and technical designs.";
         document.getElementById('overpr').innerText = "About Me";        
         document.getElementById('fullscreenButton').innerText = "Full Screen";       
         document.getElementById('plat').innerText = "Floorplan";
@@ -138,7 +138,7 @@ function translateToEnglish() {
 
     function translateToDutch() {
         document.getElementById('titell').innerText = "Levensloopbestendig wonen";
-        document.getElementById('inleidingl').innerText = "Welkom bij mijn project over levensloopbestendig wonen! Dit ontwerp richt zich op het creëren van een woning die geschikt is voor alle levensfasen, met een sterke focus op functionaliteit, comfort en duurzaamheid. Het project is geïnspireerd door de groeiende vraag naar woningen die ouderen de mogelijkheid bieden om zelfstandig te blijven wonen, zelfs als hun behoeften veranderen. Bekijk hieronder enkele afbeeldingen van mijn proces, schetsen, en technische uitwerkingen. Ik hoor graag wat je ervan vindt!";
+        document.getElementById('inleidingl').innerText = "Welkom bij mijn project over levensloopbestendig wonen! Dit ontwerp richt zich op het creëren van een woning die geschikt is voor alle levensfasen, met een sterke focus op functionaliteit, comfort en duurzaamheid. Het project is geïnspireerd door de groeiende vraag naar woningen die ouderen de mogelijkheid bieden om zelfstandig te blijven wonen, zelfs als hun behoeften veranderen. Bekijk hieronder enkele afbeeldingen van mijn proces, schetsen, en technische uitwerkingen.";
         document.getElementById('overpr').innerText = "Over Mij";        
         document.getElementById('fullscreenButton').innerText = "Vergroot";        
         document.getElementById('plat').innerText = "Plattegrond";
