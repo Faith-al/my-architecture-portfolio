@@ -6,6 +6,8 @@
     padding: 1em 2em;
     background-color: #333;
     color: white;
+    max-width: 1000px;  /* Pas dit aan aan de breedte van je foto + tekst */
+    margin: 0 auto;  /* Centreer de navbar */
 }
 
 .logo {
@@ -13,7 +15,7 @@
     align-items: center; /* Centreert het logo verticaal */
     justify-content: center; /* Optioneel: centreert het logo horizontaal */
     height: 60px; /* Zorgt ervoor dat het logo niet te groot wordt */
-   flex-direction: column; /* Stapelt de elementen onder elkaar */
+    flex-direction: column; /* Stapelt de elementen onder elkaar */
 }
 
 .logo img {
@@ -29,6 +31,15 @@
     margin-top: 5px; /* Voegt ruimte toe tussen het logo en de tekst */
 }
 
+.nav-links {
+    background: none; /* Verwijder de standaardachtergrond */
+    border: none;/* Verwijder de standaardrand */
+    padding: 0; /* Verwijder extra padding */
+    cursor: pointer; /* Zorg dat het nog steeds als een knop werkt */
+    display: inline-block;
+}
+
+
 .nav-links button {
     background: none; /* Verwijder de standaardachtergrond */
     border: none; /* Verwijder de standaardrand */
@@ -43,7 +54,25 @@
     display: block; /* Voorkomt extra witruimte */
 }
 
+.nav-links li {
+    /* Geen rand voor de li-elementen zelf, alleen voor de links */
+    margin: px; /* Optioneel: voeg wat ruimte toe rondom de knop */
+    padding: 2px px; /* Optioneel: voeg wat binnenruimte toe */
+}
 
+.nav-links li a {
+    border: 1px solid #878787; /* Voeg een zwarte rand toe van 2px */
+    background-color:none;
+    padding: 5px 10px; /* Voeg wat binnenruimte toe rondom de tekst */
+    border-radius: 5px; /* Optioneel: maak de hoeken afgerond */
+    text-decoration: none; /* Verwijder onderstreping van de link */
+    display: inline-block; /* Zorg ervoor dat de link zich gedraagt als een blok, zodat padding en borders werken */
+    color: inherit; /* Zorg ervoor dat de tekstkleur niet wordt overschreven */
+}
+
+.nav-links a:hover {
+    color: #5a5a5a; /* Rood-oranje bij hover */
+}
 
 .grid-container {
     display: grid;
@@ -52,7 +81,7 @@
     align-items: center; /* Verticaal centreren */
     max-width: 1000px; /* Maximaal breedte van de container */
     margin: 0 auto; /* Centreer de grid-container op de pagina */
-        break-inside: avoid; /* Zorg dat items niet worden afgebroken */
+    break-inside: avoid; /* Zorg dat items niet worden afgebroken */
     border-radius: 20px;
     padding-bottom: 0.1em;
     padding-top: 1em;
@@ -64,20 +93,19 @@
     overflow: hidden; /* Zorg ervoor dat de inhoud binnen de rand blijft */
     background-color: #fff; /* Optioneel: witte achtergrond */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optioneel: schaduw */
-    
+    width:700px;
 }
 
 .speckle iframe {
     width: 100%; /* Laat het iframe zich aanpassen aan de containerbreedte */
-    height: ; /* Zorg voor volledige hoogte binnen de container */
-    border: ; /* Verwijder rand van het iframe */
+    height:; /* Zorg voor volledige hoogte binnen de container */
+    border:; /* Verwijder rand van het iframe */
 }
 
-
 .uitleg img {
-    width:100%;
-   border: 1px solid #ddd; /* Optioneel: rand om elk item */
-    border-radius: 20px;
+    width: 100%;
+    border: 1px solid #ddd; /* Optioneel: rand om elk item */
+    border-radius: 200px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optioneel: schaduw */
 }
 
@@ -90,7 +118,7 @@
 
 button#fullscreenButton {
     margin-top: 10px;
-    background-color: #007BFF;
+    background-color: #007bff;
     color: white;
     border: none;
     padding: 0.5em 1em;
@@ -103,6 +131,27 @@ button#fullscreenButton:hover {
     background-color: #0056b3;
 }
 
+.questionbutton {
+background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.5em 0.5em;
+    font-size: 14.5px;
+    border-radius: 5px;
+    cursor: pointer;
+   position: right
+    
+}
+
+.questionbutton img{
+width: auto;
+height: 12px
+}
+
+.questionbutton:hover {
+    background-color: #0056b3;
+}
+
 .text-block {
     background-color: #ffffff; /* Lichtgrijze achtergrond */
     border: 1px solid #ddd; /* Dunne rand */
@@ -112,10 +161,7 @@ button#fullscreenButton:hover {
     margin: 20px auto; /* Centreer het blok op de pagina */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtiele schaduw */
     color: #333; /* Tekstkleur */
-    line-height: 1.6; /* Ruimte tussen regels */
 }
-
-
 
 .nav-links {
     list-style: none;
@@ -135,20 +181,31 @@ button#fullscreenButton:hover {
 }
 
 body {
-  font-family: Arial, sans-serif;
-  position: relative;
-  background-color: #f2fbff;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+font-family: 'Poppins', sans-serif;
+    margin: 0.5em 0;
+}
+
+p {
+font-family: 'Montserrat', sans-serif;
+    margin: 0.5em 0;
 }
 
 body::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
- /* Blauw met transparantie */
-  z-index: -1; /* Zorg ervoor dat de overlay achter de inhoud komt */
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Blauw met transparantie */
+    z-index: -1; /* Zorg ervoor dat de overlay achter de inhoud komt */
 }
 
 .hero1 {
@@ -158,15 +215,14 @@ body::before {
 }
 
 .hero1::before {
-    content: ''; /* Voeg een leeg pseudo-element toe */
+    content: ""; /* Voeg een leeg pseudo-element toe */
     position: absolute; /* Zorg ervoor dat het element op de achtergrond ligt */
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background: url('https://images.pexels.com/photos/5618007/pexels-photo-5618007.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') 
-    no-repeat center center/cover; /* Achtergrondafbeelding */
-     /* Pas de doorzichtigheid van de afbeelding aan (0 is volledig transparant, 1 is volledig ondoorzichtig) */
+    background-color: #f4f4f4; /* Achtergrondafbeelding */
+    /* Pas de doorzichtigheid van de afbeelding aan (0 is volledig transparant, 1 is volledig ondoorzichtig) */
     z-index: -1; /* Zorg ervoor dat het pseudo-element achter de inhoud ligt */
 }
 
@@ -176,49 +232,69 @@ body::before {
 }
 
 .gallery {
-    column-count: 3; /* Aantal kolommen */
+    column-count: unset; /* Aantal kolommen */
     column-gap: 15px; /* Ruimte tussen kolommen */
-    padding: 2em 2em;
+   max-height: 79vh; /* Beperk de hoogte tot 80% van het scherm */
+    overflow: auto; /* Scrollbalk verschijnt als er te veel afbeeldingen zijn */
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .gallery-item {
-    margin-bottom: 15px; /* Ruimte onder items */
+    object-fit: contain;
+    margin-bottom: 5px; /* Ruimte onder items */
     break-inside: avoid; /* Zorg dat items niet worden afgebroken */
+    width: 280px; /* Zorgt ervoor dat de items de breedte benutten */
+   height: auto;
 }
 
 .gallery-item img {
-    width: 100%;
+    
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Optionele styling voor de scrollbar */
+.gallery::-webkit-scrollbar {
+    width: 8px;
+}
+
+.gallery::-webkit-scrollbar-thumb {
+    background: #888; /* Kleur van de scrollbar */
+    border-radius: 4px;
+}
+
+.gallery::-webkit-scrollbar-thumb:hover {
+    background: #555;
 }
 
 /* button*/
 
 .button {
-display: block; /* Zorg dat de link de volledige afbeelding bedekt */
-    width: 100%;    /* Laat het de volledige breedte innemen */
-    height: 100%;   /* Laat het de volledige hoogte innemen */
+    display: block; /* Zorg dat de link de volledige afbeelding bedekt */
+    width: 100%; /* Laat het de volledige breedte innemen */
+    height: 100%; /* Laat het de volledige hoogte innemen */
     text-decoration: none; /* Verwijder eventuele onderlijning van de link */
-  transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
 }
 .button:hover {
-  background:  rgba(0, 0, 0, 0.1);
+    background: rgba(0, 0, 0, 0.1);
 }
 
 .overlay {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.7);
-  transition: opacity 500ms;
-  visibility: hidden;
-  opacity: 0;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
 }
 .overlay:target {
-  visibility: visible;
-  opacity: 1;
+    visibility: visible;
+    opacity: 1;
 }
 
 .popup {
@@ -250,35 +326,35 @@ display: block; /* Zorg dat de link de volledige afbeelding bedekt */
 
 .popup .content img {
     max-width: 100%; /* Vul de beschikbare ruimte */
-    max-height: 90vh; /* Hoogte is maximaal 80% van de schermhoogte */
+    max-height: 80vh; /* Hoogte is maximaal 80% van de schermhoogte */
     height: auto;
     width: auto;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-
 .popup h2 {
-  margin-top: 0;
-  color: #333;
-  font-family: Tahoma, Arial, sans-serif;
+    margin-top: 0;
+    color: #333;
+   font-family: 'Poppins', sans-serif;
     text-align: center;
-    padding: 0.5em
+    padding: 0.5em;
 }
 .popup .close {
-  position: fixed;
-  top: px;
-  right: 30px;
-  transition: all 200ms;
-  font-size: 30px;
-  font-weight: bold;
-  text-decoration: none;
-  color: #333;
-background-color: aliceblue;
+    position: fixed;
+    top: px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+    background-color: aliceblue;
 }
 
 /* Positionering van de pijlen */
-.prev, .next {
+.prev,
+.next {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -303,21 +379,20 @@ background-color: aliceblue;
 }
 
 /* Hover-effect voor de pijlen */
-.prev:hover, .next:hover {
+.prev:hover,
+.next:hover {
     background: rgba(0, 0, 0, 0.1);
 }
 
-#popup4 img{
-height: 900px;
+#popup4 img {
+    height: 900px;
 }
 
-
-@media screen and (max-width: 5000px){
-  .box{
-    width: 70%;
-  }
-  .popup{
-    width: 100%;
-  }
+@media screen and (max-width: 5000px) {
+    .box {
+        width: 70%;
+    }
+    .popup {
+        width: 100%;
+    }
 }
-
