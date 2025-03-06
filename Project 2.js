@@ -66,13 +66,30 @@ document.querySelectorAll('.overlay').forEach((popup) => {
 
 // Array met afbeeldingen
 const galleryImages = [
-    "Portfolio.photo/0024.jpg",
-    "Portfolio.photo/0025.jpg",
-    "Portfolio.photo/0052.jpg",
-    "Portfolio.photo/0033.jpg",
-    "Portfolio.photo/0034.jpg",
-    "Portfolio.photo/0046.jpg",
-    "Portfolio.photo/0047.jpg",
+    "Portfolio.photo/The%20cameleon%20Factsheet.jpg",
+    "Portfolio.photo/The%20cameleon%20Factsheet2.jpg",
+    "Portfolio.photo/The%20cameleon%20Factsheet3.jpg",
+    "Portfolio.photo/The%20cameleon%20Factsheet4.jpg",
+    "Portfolio.photo/The%20cameleon%20Factsheet5.jpg",
+    "Portfolio.photo/The%20cameleon%20Factsheet6.jpg",
+    "Portfolio.photo/The%20cameleon%20Factsheet7.jpg",
+    "Portfolio.photo/The%20cameleon%20Factsheet8.jpg",
+    "Portfolio.photo/The%20cameleon%20Factsheet9.jpg",
+    "Portfolio.photo/The%20cameleon%20Factsheet10.jpg",
+    "Portfolio.photo/The%20cameleon%20Factsheet11.jpg",
+    "Portfolio.photo/The%20cameleon%20Factsheet12.jpg",
+    "Portfolio.photo/De%20Kameleon%20Factsheet.jpg",
+    "Portfolio.photo/De%20Kameleon%20Factsheet2.jpg",
+    "Portfolio.photo/De%20Kameleon%20Factsheet3.jpg",
+    "Portfolio.photo/De%20Kameleon%20Factsheet4.jpg",
+    "Portfolio.photo/De%20Kameleon%20Factsheet5.jpg",
+    "Portfolio.photo/De%20Kameleon%20Factsheet6.jpg",
+    "Portfolio.photo/De%20Kameleon%20Factsheet7.jpg",
+    "Portfolio.photo/De%20Kameleon%20Factsheet8.jpg",
+    "Portfolio.photo/De%20Kameleon%20Factsheet9.jpg",
+    "Portfolio.photo/De%20Kameleon%20Factsheet10.jpg",
+    "Portfolio.photo/De%20Kameleon%20Factsheet11.jpg",
+    "Portfolio.photo/De%20Kameleon%20Factsheet12.jpg",
 ];
 
 let currentIndex = 0;
