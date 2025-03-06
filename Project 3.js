@@ -70,6 +70,11 @@ const galleryImages = [
     "Portfolio.photo/the%20warehouse%20home%202.jpg",
     "Portfolio.photo/de%20pakhuis%20woning.jpg",
     "Portfolio.photo/de%20pakhuis%20woning%202.jpg",
+    "Portfolio.photo/video-png.png",
+    "Portfolio.photo/Image1.png",
+    "Portfolio.photo/Image2.png",
+    "Portfolio.photo/Image3.png",
+    "Portfolio.photo/Image4.png",
 ];
 
 let currentIndex = 0;
