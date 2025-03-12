@@ -47,7 +47,10 @@ font-family: 'Montserrat', sans-serif;
     background-color: #333;
     color: white;
  max-width: 870px;  /* Pas dit aan aan de breedte van je foto + tekst */
-    margin: 0 auto;  /* Centreer de navbar */
+    margin: -80px auto 0 auto; /* Negatieve marge om het omhoog te plaatsen */
+    position: relative; /* Zorg ervoor dat het niet vast blijft staan bij scrollen */
+    z-index: 10; /* Zorg dat het boven andere elementen blijft */
+
 }
 
 
@@ -102,6 +105,7 @@ font-family: 'Montserrat', sans-serif;
     text-align: center;
     padding: 5em 2em;
     color: #2b4c70;
+min-height: 99px; /* Voegt een minimale hoogte toe zodat het groter blijft */
 }
 
 .hero::before {
@@ -117,12 +121,6 @@ font-family: 'Montserrat', sans-serif;
     z-index: -1; /* Zorg ervoor dat het pseudo-element achter de inhoud ligt */
     transition: filter 0.5s ease-in-out; /* Vloeiende overgang */
 }
-
-/* Terug naar kleur bij hover */
-.hero-content:hover::before {
-    filter: grayscale(0%);
-}
-
 
 .hero-content {
     max-width: 800px;
@@ -143,6 +141,10 @@ font-family: 'Montserrat', sans-serif;
     position: relative;
     top: 20px; /* Verplaatst de knop 20px naar beneden */
 }
+
+
+
+
 
 /* Over mij sectie */
 /* Basisstijl voor de about-sectie */
