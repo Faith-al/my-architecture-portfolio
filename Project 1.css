@@ -74,6 +74,57 @@
     color: #5a5a5a; /* Rood-oranje bij hover */
 }
 
+/* Stijl voor de dropdown-container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Stijl voor de dropdown-knop */
+.dropbtn {
+    background-color: none;
+    color: white;
+    border: 3px solid #878787;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+font-family: Poppins, sans-serif;
+margin: 0.5em 0;
+}
+
+/* Stijl voor de dropdown-inhoud */
+.dropdown-content {
+    display: none; /* Verberg standaard het menu */
+    position: absolute;
+    min-width: 90.5px;
+    z-index: 1000;
+    border-radius: 5px;
+padding: 0; /* Geen extra ruimte buiten de knoppen */
+}
+
+/* Stijl voor de dropdown-links */
+.dropdown-content a {
+   color: white; /* Tekst wit voor contrast */
+    background-color: #333; /* Achtergrondkleur hier, niet bij .dropdown-content */
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    border: 1px solid white; /* Optionele rand om de knoppen */
+    border-radius: 5px; /* Voor mooiere afgeronde hoeken */
+    text-align: center; /* Zorgt ervoor dat de tekst in het midden staat */
+    margin: 2px 0; /* Zorgt voor ruimte tussen de knoppen */
+}
+
+/* Hover effect voor links */
+.dropdown-content a:hover {
+  color: #5a5a5a; /* Rood-oranje bij hover */
+}
+
+/* Toon het menu bij hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr; /* Twee kolommen van gelijke breedte */
@@ -396,3 +447,4 @@ body::before {
         width: 100%;
     }
 }
+
