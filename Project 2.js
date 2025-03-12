@@ -137,7 +137,7 @@ document.querySelectorAll('.popup').forEach((popup, index, popups) => {
 function translateToEnglish() {
         document.getElementById('thuis').innerText = "Home";
         document.getElementById('titell').innerText = "Circular Building Block";
-        document.getElementById('inleidingl').innerText = "Welcome to my project where I worked on a sustainable facade for the Basisschool: de Kameleon! This design focuses on creating a sustainable and future-proof learning environment, with a strong emphasis on circularity, climate adaptation, and nature inclusivity. This project has taught me a lot about sustainable construction and the importance of nature in the city. Below is the factsheet of my project where you can see my process, sketches, and developments.";
+        document.getElementById('inleidingl').innerText = "Welcome to my project where I worked on a sustainable facade for the Basisschool: de Kameleon! This design focuses on creating a sustainable and future-proof learning environment, with a strong emphasis on circularity, climate adaptation, and nature inclusivity. This project has taught me a lot about sustainable construction and the importance of nature in the city. \n Below is the factsheet of my project where you can see my process, sketches, and developments.";
         document.getElementById('overpr').innerText = "About Me";        
         
         document.getElementById('1').src = "Portfolio.photo/The%20cameleon%20Factsheet.jpg";
@@ -175,7 +175,7 @@ function translateToEnglish() {
     function translateToDutch() {
         document.getElementById('thuis').innerText = "Thuis";
         document.getElementById('titell').innerText = "Circulaire Bouwsteen";
-        document.getElementById('inleidingl').innerText = "Welkom bij mijn project waar ik gewerkt heb aan een duurzame gevel voor de Basisschool: de Kameleon! Dit ontwerp richt zich op het creëren van een duurzame en toekomstbestendige leeromgeving, met een sterke focus op circulariteit, klimaatadaptatie en natuurinclusiviteit. Dit project heeft me veel geleerd over duurzaam bouwen en het belang van natuur in de stad. Hieronder zijn de factsheet van mijn project waar je mijn proces, schetsen en uitwerkingen kunt zien.";
+        document.getElementById('inleidingl').innerText = "Welkom bij mijn project waar ik gewerkt heb aan een duurzame gevel voor de Basisschool: de Kameleon! Dit ontwerp richt zich op het creëren van een duurzame en toekomstbestendige leeromgeving, met een sterke focus op circulariteit, klimaatadaptatie en natuurinclusiviteit. Dit project heeft me veel geleerd over duurzaam bouwen en het belang van natuur in de stad. \n Hieronder zijn de factsheet van mijn project waar je mijn proces, schetsen en uitwerkingen kunt zien.";
         document.getElementById('overpr').innerText = "Over Mij";        
         document.getElementById('1').src= "Portfolio.photo/De%20Kameleon%20Factsheet.jpg";
         document.getElementById('2').src = "Portfolio.photo/De%20Kameleon%20Factsheet2.jpg";
