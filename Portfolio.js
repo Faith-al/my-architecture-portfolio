@@ -2,7 +2,7 @@
     function translateToEnglish() {
         document.getElementById('titel').innerText = "Welcome to My \n Portfolio website";
         document.getElementById('overh2').innerText = "About Me";
-        document.getElementById('overp').innerText = "My name is Faith Bundu, and I am a second-year architectural engineering student at Rotterdam University of Applied Sciences. I specialize in architecture, with experience in AutoCAD, Revit, and Twinmotion. My passion lies in creating creative, innovative, and sustainable designs.";
+        document.getElementById('overp').innerText = "My name is Faith Bundu, and I am a second-year architectural engineering student at Rotterdam University of Applied Sciences. I specialize in architecture with experience in Adobe Suite, Revit, and Twinmotion. My passion lies in creating creative, innovative, and sustainable designs.";
         document.getElementById('levenh3').innerText = "Lifetime-Adaptable Living";
         document.getElementById('overmp').innerText = "About me";
         document.getElementById('naam').innerText = "Name";
@@ -17,7 +17,7 @@
     function translateToDutch() {
         document.getElementById('titel').innerText = "Welkom op Mijn Portfolio";
         document.getElementById('overh2').innerText = "Over Mij";
-        document.getElementById('overp').innerText = "Mijn naam is Faith Bundu en ik ben een tweedejaars bouwkundestudent aan de Hogeschool Rotterdam. Ik ben gespecialiseerd in architectuur, met ervaring in AutoCAD, Revit, en Twinmotion. Mijn passie ligt in het maken van creatieve, innovatieve en duurzame ontwerpen.";
+        document.getElementById('overp').innerText = "Mijn naam is Faith Bundu en ik ben een tweedejaars bouwkundestudent aan de Hogeschool Rotterdam. Ik ben gespecialiseerd in architectuur met ervaring in Adobe Suite, Revit, en Twinmotion. Mijn passie ligt in het maken van creatieve, innovatieve en duurzame ontwerpen.";
         document.getElementById('levenh3').innerText = "Levensloopbestendig wonen";
         document.getElementById('overmp').innerText = "Over mij";
         document.getElementById('naam').innerText = "Naam";
