@@ -90,6 +90,7 @@ const galleryImages = [
     "Portfolio.photo/De%20Kameleon%20Factsheet10.jpg",
     "Portfolio.photo/De%20Kameleon%20Factsheet11.jpg",
     "Portfolio.photo/De%20Kameleon%20Factsheet12.jpg",
+
 ];
 
 let currentIndex = 0;
@@ -163,6 +164,9 @@ function translateToEnglish() {
         document.getElementById('10.').src = "Portfolio.photo/The%20cameleon%20Factsheet10.jpg";
         document.getElementById('11.').src = "Portfolio.photo/The%20cameleon%20Factsheet11.jpg";
         document.getElementById('12.').src = "Portfolio.photo/The%20cameleon%20Factsheet12.jpg";
+        document.getElementById('levenh4').innerText = "Lifetime-Adaptable Living";
+        document.getElementById('pakhuis2').innerText = "Warehouse Home";        
+        document.getElementById('circb2').innerText = "Circular Building Block"; 
 }
 
 
@@ -197,4 +201,7 @@ function translateToEnglish() {
         document.getElementById('10.').src = "Portfolio.photo/De%20Kameleon%20Factsheet10.jpg";
         document.getElementById('11.').src = "Portfolio.photo/De%20Kameleon%20Factsheet11.jpg";
         document.getElementById('12.').src = "Portfolio.photo/De%20Kameleon%20Factsheet12.jpg";
-    }
+        document.getElementById('levenh4').innerText = "Levensloopbestendig wonen";
+        document.getElementById('pakhuis2').innerText = "Pakhuis woning";        
+        document.getElementById('circb2').innerText = "Circulaire bouwsteen";     
+}
