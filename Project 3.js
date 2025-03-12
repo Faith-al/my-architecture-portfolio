@@ -121,7 +121,7 @@ document.querySelectorAll('.popup').forEach((popup, index, popups) => {
 function translateToEnglish() {
         document.getElementById('thuis').innerText = "Home";
         document.getElementById('titell').innerText = "Warehouse home";
-        document.getElementById('inleidingl').innerText = "Welcome to My Project where I have designed a residential building for the Schiemond district in Rotterdam. The design is inspired by the old warehouses that once stood in the area. The building is intended for young couples and families, featuring 40m² apartments for couples and 70m² apartments for families, including two bedrooms. On the ground floor, there will be a communal space, such as a library and play area, where residents can meet and interact. I have carefully considered factors such as sunlight, views, and an underground cable that cannot be built over. The building features a cubical shape, similar to the old warehouses, but with a modern twist. This project has taught me a lot about combining historical inspiration with contemporary architecture and creating a functional yet aesthetically appealing living environment. Below, you can explore the posters of my project, showcasing my process, sketches, and final designs.";
+        document.getElementById('inleidingl').innerText = "Welcome to My Project where I have designed a residential building for the Schiemond district in Rotterdam. The design is inspired by the old warehouses that once stood in the area. The building is intended for young couples and families, featuring 40m² apartments for couples and 70m² apartments for families, including two bedrooms. On the ground floor, there will be a communal space, such as a library and play area, where residents can meet and interact. I have carefully considered factors such as sunlight, views, and an underground cable that cannot be built over. The building features a cubical shape, similar to the old warehouses, but with a modern twist. This project has taught me a lot about combining historical inspiration with contemporary architecture and creating a functional yet aesthetically appealing living environment. \n Below, you can explore the posters of my project, showcasing my process, sketches, and final designs.";
         document.getElementById('overpr').innerText = "About Me";        
         document.getElementById('fullscreenButton').innerText = "Full Screen";       
         document.getElementById('instrnl').src = "Portfolio.photo/Instructions.png";  
@@ -129,6 +129,9 @@ function translateToEnglish() {
         document.getElementById('poster1.').src = "Portfolio.photo/the%20warehouse%20home.jpg";
         document.getElementById('poster2').src = "Portfolio.photo/the%20warehouse%20home%202.jpg";
         document.getElementById('poster2.').src = "Portfolio.photo/the%20warehouse%20home%202.jpg";
+        document.getElementById('levenh4').innerText = "Lifetime-Adaptable Living";
+        document.getElementById('pakhuis2').innerText = "Warehouse Home";        
+        document.getElementById('circb2').innerText = "Circular Building Block"; 
 }
 
 
@@ -137,7 +140,7 @@ function translateToEnglish() {
     function translateToDutch() {
         document.getElementById('thuis').innerText = "Thuis";
         document.getElementById('titell').innerText = "Pakhuis woning";
-        document.getElementById('inleidingl').innerText = "Welkom bij mijn project waar ik een woningontwerp heb gemaakt voor de wijk Schiemond in Rotterdam. Het ontwerp is geïnspireerd op de oude pakhuizen die vroeger in de wijk stonden. Het gebouw is bedoeld voor jonge stellen en gezinnen. Er zijn appartementen van 40m² voor stellen en 70m² voor gezinnen, met twee slaapkamers. Op de begane grond komt een collectieve ruimte, zoals een bibliotheek en speelplek, waar bewoners elkaar kunnen ontmoeten. Ik heb rekening gehouden met de zon, het uitzicht en een ondergrondse kabel waar niet op gebouwd mag worden. Het gebouw heeft een kubische vorm, net zoals de oude pakhuizen, maar dan moderner. Dit project heeft me veel geleerd over het combineren van geschiedenis en moderne architectuur en het creëren van een leefomgeving die zowel functioneel als esthetisch aantrekkelijk is. Hieronder zijn de posters van mijn project waar je mijn proces, schetsen en uitwerkingen kunt zien." ;
+        document.getElementById('inleidingl').innerText = "Welkom bij mijn project waar ik een woningontwerp heb gemaakt voor de wijk Schiemond in Rotterdam. Het ontwerp is geïnspireerd op de oude pakhuizen die vroeger in de wijk stonden. Het gebouw is bedoeld voor jonge stellen en gezinnen. Er zijn appartementen van 40m² voor stellen en 70m² voor gezinnen, met twee slaapkamers. Op de begane grond komt een collectieve ruimte, zoals een bibliotheek en speelplek, waar bewoners elkaar kunnen ontmoeten. Ik heb rekening gehouden met de zon, het uitzicht en een ondergrondse kabel waar niet op gebouwd mag worden. Het gebouw heeft een kubische vorm, net zoals de oude pakhuizen, maar dan moderner. Dit project heeft me veel geleerd over het combineren van geschiedenis en moderne architectuur en het creëren van een leefomgeving die zowel functioneel als esthetisch aantrekkelijk is. \n Hieronder zijn de posters van mijn project waar je mijn proces, schetsen en uitwerkingen kunt zien." ;
         document.getElementById('overpr').innerText = "Over Mij";        
         document.getElementById('fullscreenButton').innerText = "Vergroot";   
         document.getElementById('instrnl').src= "Portfolio.photo/Instructies2.png";
@@ -145,4 +148,7 @@ function translateToEnglish() {
         document.getElementById('poster1.').src = "Portfolio.photo/de%20pakhuis%20woning.jpg";
         document.getElementById('poster2').src = "Portfolio.photo/de%20pakhuis%20woning%202.jpg";
         document.getElementById('poster2.').src = "Portfolio.photo/de%20pakhuis%20woning%202.jpg";
-    }
+        document.getElementById('levenh4').innerText = "Levensloopbestendig wonen";
+        document.getElementById('pakhuis2').innerText = "Pakhuis woning";        
+        document.getElementById('circb2').innerText = "Circulaire bouwsteen";     
+}
