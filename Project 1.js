@@ -130,7 +130,9 @@ function translateToEnglish() {
         document.getElementById('bouwkfun').innerText = "Architectural Foundation/wall Detail";   
         document.getElementById('instrnl').src = "Portfolio.photo/Instructions.png";
         document.getElementById('thuis').innerText = "Home";
-
+        document.getElementById('levenh4').innerText = "Lifetime-Adaptable Living";
+        document.getElementById('pakhuis2').innerText = "Warehouse Home";        
+        document.getElementById('circb2').innerText = "Circular Building Block"; 
 }
 
 
@@ -150,4 +152,7 @@ function translateToEnglish() {
         document.getElementById('bouwkfun').innerText = "Bouwkundige fundering/muur detail";        
         document.getElementById('instrnl').src= "Portfolio.photo/Instructies2.png";
         document.getElementById('thuis').innerText = "Thuis";
+        document.getElementById('levenh4').innerText = "Levensloopbestendig wonen";
+        document.getElementById('pakhuis2').innerText = "Pakhuis woning";        
+        document.getElementById('circb2').innerText = "Circulaire bouwsteen"; 
     }
