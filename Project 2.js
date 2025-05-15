@@ -90,6 +90,7 @@ const galleryImages = [
     "Portfolio.photo/De%20Kameleon%20Factsheet10.jpg",
     "Portfolio.photo/De%20Kameleon%20Factsheet11.jpg",
     "Portfolio.photo/De%20Kameleon%20Factsheet12.jpg",
+    
 
 ];
 
@@ -137,7 +138,7 @@ document.querySelectorAll('.popup').forEach((popup, index, popups) => {
 function translateToEnglish() {
         document.getElementById('thuis').innerText = "Home";
         document.getElementById('titell').innerText = "Circular Building Block";
-        document.getElementById('inleidingl').innerText = "Welcome to my project where I worked on a sustainable facade for the Basisschool: de Kameleon! This design focuses on creating a sustainable and future-proof learning environment, with a strong emphasis on circularity, climate adaptation, and nature inclusivity. This project has taught me a lot about sustainable construction and the importance of nature in the city. \n Below is the factsheet of my project where you can see my process, sketches, and developments.";
+        document.getElementById('inleidingl').innerText = "Welcome to my project where I worked on a sustainable facade for the Basisschool: de Kameleon! This design focuses on creating a sustainable and future-proof learning environment, with a strong emphasis on circularity, climate adaptation, and nature inclusivity. This project has taught me a lot about sustainable construction and the importance of nature in the city. Below is the factsheet of my project where you can see my process, sketches, and developments.";
         document.getElementById('overpr').innerText = "About Me";        
         
         document.getElementById('1').src = "Portfolio.photo/The%20cameleon%20Factsheet.jpg";
@@ -167,6 +168,7 @@ function translateToEnglish() {
         document.getElementById('levenh4').innerText = "Lifetime-Adaptable Living";
         document.getElementById('pakhuis2').innerText = "Warehouse Home";        
         document.getElementById('circb2').innerText = "Circular Building Block"; 
+        document.getElementById('skipiste2').innerText = "Mountain ski station";
 }
 
 
@@ -175,7 +177,7 @@ function translateToEnglish() {
     function translateToDutch() {
         document.getElementById('thuis').innerText = "Thuis";
         document.getElementById('titell').innerText = "Circulaire Bouwsteen";
-        document.getElementById('inleidingl').innerText = "Welkom bij mijn project waar ik gewerkt heb aan een duurzame gevel voor de Basisschool: de Kameleon! Dit ontwerp richt zich op het creëren van een duurzame en toekomstbestendige leeromgeving, met een sterke focus op circulariteit, klimaatadaptatie en natuurinclusiviteit. Dit project heeft me veel geleerd over duurzaam bouwen en het belang van natuur in de stad. \n Hieronder zijn de factsheet van mijn project waar je mijn proces, schetsen en uitwerkingen kunt zien.";
+        document.getElementById('inleidingl').innerText = "Welkom bij mijn project waar ik gewerkt heb aan een duurzame gevel voor de Basisschool: de Kameleon! Dit ontwerp richt zich op het creëren van een duurzame en toekomstbestendige leeromgeving, met een sterke focus op circulariteit, klimaatadaptatie en natuurinclusiviteit. Dit project heeft me veel geleerd over duurzaam bouwen en het belang van natuur in de stad. Hieronder zijn de factsheet van mijn project waar je mijn proces, schetsen en uitwerkingen kunt zien.";
         document.getElementById('overpr').innerText = "Over Mij";        
         document.getElementById('1').src= "Portfolio.photo/De%20Kameleon%20Factsheet.jpg";
         document.getElementById('2').src = "Portfolio.photo/De%20Kameleon%20Factsheet2.jpg";
@@ -201,7 +203,12 @@ function translateToEnglish() {
         document.getElementById('10.').src = "Portfolio.photo/De%20Kameleon%20Factsheet10.jpg";
         document.getElementById('11.').src = "Portfolio.photo/De%20Kameleon%20Factsheet11.jpg";
         document.getElementById('12.').src = "Portfolio.photo/De%20Kameleon%20Factsheet12.jpg";
-        document.getElementById('levenh4').innerText = "Levensloopbestendig wonen";
+        document.getElementById('levenh4').innerText = "Lifetime-Adaptable Living";
+        document.getElementById('pakhuis2').innerText = "Warehouse Home";        
+        document.getElementById('circb2').innerText = "Circular Building Block"; document.getElementById('levenh4').innerText = "Levensloopbestendig wonen";
         document.getElementById('pakhuis2').innerText = "Pakhuis woning";        
-        document.getElementById('circb2').innerText = "Circulaire bouwsteen";     
+        document.getElementById('circb2').innerText = "Circulaire bouwsteen"; 
+        document.getElementById('skipiste2').innerText = "Tussenstation skipiste"; 
+        document.getElementById('').innerText = "";
+
 }
