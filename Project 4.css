@@ -1,0 +1,449 @@
+/* Navigatie */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em;
+    background-color: #333;
+    color: white;
+    max-width: 1000px;  /* Pas dit aan aan de breedte van je foto + tekst */
+    margin: 0 auto;  /* Centreer de navbar */
+}
+
+.logo {
+    display: flex;
+    align-items: center; /* Centreert het logo verticaal */
+    justify-content: center; /* Optioneel: centreert het logo horizontaal */
+    height: 60px; /* Zorgt ervoor dat het logo niet te groot wordt */
+    flex-direction: column; /* Stapelt de elementen onder elkaar */
+}
+
+.logo img {
+    max-height: 50px; /* Beperk de hoogte */
+    width: auto; /* Zorgt ervoor dat de breedte zich automatisch aanpast */
+    display: block; /* Voorkomt dat de afbeelding naast de tekst komt */
+    margin: 0 auto; /* Centreert de afbeelding */
+}
+
+.logo-text {
+    text-align: center; /* Zorgt ervoor dat de tekst gecentreerd is */
+    font-size: 16px; /* Pas de tekstgrootte aan indien nodig */
+    margin-top: 5px; /* Voegt ruimte toe tussen het logo en de tekst */
+}
+
+.nav-links {
+    background: none; /* Verwijder de standaardachtergrond */
+    border: none;/* Verwijder de standaardrand */
+    padding: 0; /* Verwijder extra padding */
+    cursor: pointer; /* Zorg dat het nog steeds als een knop werkt */
+    display: inline-block;
+}
+
+
+.nav-links button {
+    background: none; /* Verwijder de standaardachtergrond */
+    border: none; /* Verwijder de standaardrand */
+    padding: 0; /* Verwijder extra padding */
+    cursor: pointer; /* Zorg dat het nog steeds als een knop werkt */
+    display: inline-block;
+}
+
+.nav-links button img {
+    height: 30px;
+    width: 50px;
+    display: block; /* Voorkomt extra witruimte */
+}
+
+.nav-links li {
+    /* Geen rand voor de li-elementen zelf, alleen voor de links */
+    margin: px; /* Optioneel: voeg wat ruimte toe rondom de knop */
+    padding: 2px px; /* Optioneel: voeg wat binnenruimte toe */
+}
+
+.nav-links li a {
+    border: 1px solid #878787; /* Voeg een zwarte rand toe van 2px */
+    background-color:none;
+    padding: 5px 10px; /* Voeg wat binnenruimte toe rondom de tekst */
+    border-radius: 5px; /* Optioneel: maak de hoeken afgerond */
+    text-decoration: none; /* Verwijder onderstreping van de link */
+    display: inline-block; /* Zorg ervoor dat de link zich gedraagt als een blok, zodat padding en borders werken */
+    color: inherit; /* Zorg ervoor dat de tekstkleur niet wordt overschreven */
+}
+
+.nav-links a:hover {
+    color: #5a5a5a; /* Rood-oranje bij hover */
+}
+
+/* Stijl voor de dropdown-container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Stijl voor de dropdown-knop */
+.dropbtn {
+    background-color: none;
+    color: white;
+    border: 3px solid #878787;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+font-family: Poppins, sans-serif;
+margin: 0.5em 0;
+}
+
+/* Stijl voor de dropdown-inhoud */
+.dropdown-content {
+    display: none; /* Verberg standaard het menu */
+    position: absolute;
+    min-width: 90.5px;
+    z-index: 1000;
+    border-radius: 5px;
+padding: 0; /* Geen extra ruimte buiten de knoppen */
+}
+
+/* Stijl voor de dropdown-links */
+.dropdown-content a {
+   color: white; /* Tekst wit voor contrast */
+    background-color: #333; /* Achtergrondkleur hier, niet bij .dropdown-content */
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    border: 1px solid white; /* Optionele rand om de knoppen */
+    border-radius: 5px; /* Voor mooiere afgeronde hoeken */
+    text-align: center; /* Zorgt ervoor dat de tekst in het midden staat */
+    margin: 2px 0; /* Zorgt voor ruimte tussen de knoppen */
+}
+
+/* Hover effect voor links */
+.dropdown-content a:hover {
+  color: #5a5a5a; /* Rood-oranje bij hover */
+}
+
+/* Toon het menu bij hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Twee kolommen van gelijke breedte */
+    gap: 20px; /* Ruimte tussen de items */
+    align-items: center; /* Verticaal centreren */
+    max-width: 1000px; /* Maximaal breedte van de container */
+    margin: 0 auto; /* Centreer de grid-container op de pagina */
+    break-inside: avoid; /* Zorg dat items niet worden afgebroken */
+    border-radius: 20px;
+    padding-bottom: 0.1em;
+    padding-top: 1em;
+}
+
+.grid-item {
+    border: 1px solid #ddd; /* Optioneel: rand om elk item */
+    border-radius: 20px;
+    overflow: hidden; /* Zorg ervoor dat de inhoud binnen de rand blijft */
+    background-color: #fff; /* Optioneel: witte achtergrond */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optioneel: schaduw */
+    width:700px;
+}
+
+.speckle iframe {
+    width: 100%; /* Laat het iframe zich aanpassen aan de containerbreedte */
+    height:; /* Zorg voor volledige hoogte binnen de container */
+    border:; /* Verwijder rand van het iframe */
+}
+
+.uitleg img {
+    width: 100%;
+    border: 1px solid #ddd; /* Optioneel: rand om elk item */
+    border-radius: 200px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optioneel: schaduw */
+}
+
+/* Responsief ontwerp */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr; /* Eén kolom op kleinere schermen */
+    }
+}
+
+button#fullscreenButton {
+    margin-top: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button#fullscreenButton:hover {
+    background-color: #0056b3;
+}
+
+.questionbutton {
+background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.5em 0.5em;
+    font-size: 14.5px;
+    border-radius: 5px;
+    cursor: pointer;
+   position: right
+    
+}
+
+.questionbutton img{
+width: auto;
+height: 12px
+}
+
+.questionbutton:hover {
+    background-color: #0056b3;
+}
+
+.text-block {
+    background-color: #ffffff; /* Lichtgrijze achtergrond */
+    border: 1px solid #ddd; /* Dunne rand */
+    border-radius: 8px; /* Afgeronde hoeken */
+    padding: 20px; /* Ruimte binnenin het blok */
+    max-width: 1000px; /* Maximale breedte van het blok */
+    margin: 20px auto; /* Centreer het blok op de pagina */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtiele schaduw */
+    color: #333; /* Tekstkleur */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1em;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+font-family: 'Poppins', sans-serif;
+    margin: 0.5em 0;
+}
+
+p {
+font-family: 'Montserrat', sans-serif;
+    margin: 0.5em 0;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Blauw met transparantie */
+    z-index: -1; /* Zorg ervoor dat de overlay achter de inhoud komt */
+}
+
+.hero1 {
+    position: relative; /* Zet de positie van het element in om een pseudo-element te gebruiken */
+    padding: 2em 2em;
+    color: #2b4c70;
+}
+
+.hero1::before {
+    content: ""; /* Voeg een leeg pseudo-element toe */
+    position: absolute; /* Zorg ervoor dat het element op de achtergrond ligt */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #f4f4f4; /* Achtergrondafbeelding */
+    /* Pas de doorzichtigheid van de afbeelding aan (0 is volledig transparant, 1 is volledig ondoorzichtig) */
+    z-index: -1; /* Zorg ervoor dat het pseudo-element achter de inhoud ligt */
+}
+
+.hero1-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.gallery {
+    column-count: unset; /* Aantal kolommen */
+    column-gap: 15px; /* Ruimte tussen kolommen */
+   max-height: 79vh; /* Beperk de hoogte tot 80% van het scherm */
+    overflow: auto; /* Scrollbalk verschijnt als er te veel afbeeldingen zijn */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallery-item {
+    object-fit: contain;
+    margin-bottom: 5px; /* Ruimte onder items */
+    break-inside: avoid; /* Zorg dat items niet worden afgebroken */
+    width: 280px; /* Zorgt ervoor dat de items de breedte benutten */
+   height: auto;
+}
+
+.gallery-item img {
+    
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Optionele styling voor de scrollbar */
+.gallery::-webkit-scrollbar {
+    width: 8px;
+}
+
+.gallery::-webkit-scrollbar-thumb {
+    background: #888; /* Kleur van de scrollbar */
+    border-radius: 4px;
+}
+
+.gallery::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* button*/
+
+.button {
+    display: block; /* Zorg dat de link de volledige afbeelding bedekt */
+    width: 100%; /* Laat het de volledige breedte innemen */
+    height: 100%; /* Laat het de volledige hoogte innemen */
+    text-decoration: none; /* Verwijder eventuele onderlijning van de link */
+    transition: all 0.3s ease-out;
+}
+.button:hover {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup {
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    width: 70%;
+    height: 100%;
+    max-width: 1000px; /* Zorg dat de pop-up niet te breed is */
+    max-height: 200vh;
+    position: fixed; /* Gebruik fixed voor centreren */
+    top: 50%; /* Positioneer in het midden van de viewport */
+    left: 50%;
+    transform: translate(-50%, -50%); /* Houd rekening met breedte en hoogte */
+    overflow: auto; /* Zorg voor scrollen bij veel inhoud */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Voeg een lichte schaduw toe */
+    z-index: 1000; /* Zorg dat het boven andere elementen blijft */
+}
+
+.popup .content {
+    display: flex;
+    flex-direction: column; /* Zet tekst onder de afbeelding */
+    align-items: center; /* Centreer inhoud horizontaal */
+    gap: 15px; /* Voeg ruimte toe tussen afbeelding en tekst */
+    font-family: Arial, sans-serif; /* Zorg voor een nette fontstijl */
+    text-align: center; /* Centreer tekst */
+}
+
+.popup .content img {
+    max-width: 100%; /* Vul de beschikbare ruimte */
+    max-height: 80vh; /* Hoogte is maximaal 80% van de schermhoogte */
+    height: auto;
+    width: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.popup h2 {
+    margin-top: 0;
+    color: #333;
+   font-family: 'Poppins', sans-serif;
+    text-align: center;
+    padding: 0.5em;
+}
+.popup .close {
+    position: fixed;
+    top: px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+    background-color: aliceblue;
+}
+
+/* Positionering van de pijlen */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 16px;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    user-select: none;
+    z-index: 1000;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/* Hover-effect voor de pijlen */
+.prev:hover,
+.next:hover {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+#popup4 img {
+    height: 900px;
+}
+
+@media screen and (max-width: 5000px) {
+    .box {
+        width: 70%;
+    }
+    .popup {
+        width: 100%;
+    }
+}
