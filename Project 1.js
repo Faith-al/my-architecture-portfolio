@@ -133,6 +133,7 @@ function translateToEnglish() {
         document.getElementById('levenh4').innerText = "Lifetime-Adaptable Living";
         document.getElementById('pakhuis2').innerText = "Warehouse Home";        
         document.getElementById('circb2').innerText = "Circular Building Block"; 
+        document.getElementById('skipiste2').innerText = "Mountain ski station";
 }
 
 
@@ -155,4 +156,7 @@ function translateToEnglish() {
         document.getElementById('levenh4').innerText = "Levensloopbestendig wonen";
         document.getElementById('pakhuis2').innerText = "Pakhuis woning";        
         document.getElementById('circb2').innerText = "Circulaire bouwsteen"; 
+         document.getElementById('skipiste2').innerText = "Tussenstation skipiste"; 
+        document.getElementById('').innerText = "";
+
     }
