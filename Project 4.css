@@ -435,9 +435,7 @@ body::before {
     background: rgba(0, 0, 0, 0.1);
 }
 
-#popup4 img {
-    height: 900px;
-}
+
 
 @media screen and (max-width: 5000px) {
     .box {
